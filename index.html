@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gabriela Raquel Martínez · Content Strategist & Marketing Digital</title>
+<meta name="description" content="Portafolio de marketing y contenidos de Gabriela Raquel Martínez. Copywriting, branding, SEO, storytelling y UX writing. Viña del Mar, Chile.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Lora:ital@1&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   SISTEMA DE DISEÑO — Bold tipográfico · naranja brasa
+   Edita aquí los colores si quieres
+   ============================================================ */
+:root{
+  --ink:#0C0C0C;        /* casi negro */
+  --paper:#F2EFE9;      /* hueso (fondo) */
+  --paper2:#E7E2D8;
+  --acc:#FF4D23;        /* naranja brasa (acento) */
+  --soft:#3A382F;
+  --muted:#8A8478;
+  --dmuted:#6C675C;
+  --line:#CCC5B6;
+  --dline:#2B2A26;
+  --sans:'Poppins', sans-serif;
+  --serif:'Lora', serif;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased;}
+.it{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--acc);}
+.acc{color:var(--acc);}
+section{padding:110px 0;}
+.wrap{max-width:1180px;margin:0 auto;padding:0 40px;}
+.kick{font-size:13px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--acc);margin-bottom:18px;}
+.idx{font-size:11px;font-weight:700;letter-spacing:.2em;color:var(--muted);margin-bottom:10px;}
+h2.big{font-weight:700;font-size:clamp(42px,7vw,86px);line-height:0.92;letter-spacing:-0.035em;}
+.lead{font-size:clamp(18px,2.4vw,24px);font-weight:500;line-height:1.4;}
+.muted{color:var(--muted);}
+.soft{color:var(--soft);}
+.rule{width:54px;height:4px;background:var(--acc);border:0;margin:22px 0;}
+a{color:inherit;}
+
+/* ---------- NAV ---------- */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(12,12,12,.92);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--dline);}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:16px;padding-bottom:16px;}
+nav .logo{color:var(--paper);font-weight:700;font-size:15px;letter-spacing:-0.01em;}
+nav .logo .it{font-size:16px;}
+nav .links{display:flex;gap:26px;}
+nav .links a{color:var(--muted);text-decoration:none;font-size:12px;font-weight:600;
+  letter-spacing:.08em;text-transform:uppercase;transition:color .2s;}
+nav .links a:hover{color:var(--acc);}
+.nav-cta{color:var(--paper)!important;border:1px solid var(--acc);border-radius:30px;padding:7px 16px;}
+.nav-cta:hover{background:var(--acc);}
+@media(max-width:860px){ nav .links{display:none;} }
+
+/* ---------- HERO ---------- */
+#hero{background:var(--ink);color:var(--paper);min-height:100vh;display:flex;align-items:center;
+  position:relative;overflow:hidden;padding-top:90px;}
+#hero .mark{position:absolute;right:-40px;top:60px;font-family:var(--serif);font-style:italic;
+  font-size:min(620px,68vw);color:#161512;line-height:1;pointer-events:none;}
+#hero .wrap{position:relative;z-index:2;}
+#hero h1{font-weight:700;font-size:clamp(56px,12vw,128px);line-height:0.92;letter-spacing:-0.045em;color:var(--paper);}
+#hero h1 .it{font-size:clamp(52px,11.5vw,118px);}
+#hero .tagline{font-size:clamp(16px,2vw,20px);color:var(--muted);max-width:560px;margin-top:30px;line-height:1.5;}
+#hero .tagline b{color:var(--paper);font-weight:600;}
+.btn{display:inline-block;margin-top:34px;background:var(--acc);color:#fff;text-decoration:none;
+  font-weight:700;font-size:14px;letter-spacing:.04em;padding:15px 30px;border-radius:32px;transition:transform .2s;}
+.btn:hover{transform:translateY(-2px);}
+
+/* ---------- SOBRE MÍ ---------- */
+#sobre .grid{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:start;margin-top:30px;}
+#sobre h2.big .it{display:block;}
+.metrics{display:grid;grid-template-columns:1fr 1fr;gap:30px 26px;}
+.metric .n{font-weight:700;font-size:clamp(44px,5vw,62px);letter-spacing:-0.03em;line-height:1;}
+.metric .l{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:8px;}
+.edu{border-top:1px solid var(--line);margin-top:34px;padding-top:18px;font-size:11px;font-weight:700;
+  letter-spacing:.08em;color:var(--muted);line-height:2;text-transform:uppercase;}
+@media(max-width:860px){ #sobre .grid{grid-template-columns:1fr;gap:40px;} }
+
+/* ---------- SERVICIOS ---------- */
+#servicios .list{column-count:2;column-gap:60px;margin-top:30px;}
+.svc{display:flex;gap:16px;align-items:baseline;border-top:1px solid var(--line);padding:18px 0;break-inside:avoid;}
+.svc .sn{color:var(--acc);font-weight:700;font-size:13px;min-width:26px;}
+.svc .st{font-weight:700;font-size:17px;flex:0 0 auto;width:44%;letter-spacing:-0.01em;}
+.svc .sd{color:var(--muted);font-size:13px;flex:1;}
+@media(max-width:860px){
+  #servicios .list{column-count:1;}
+  .svc{flex-wrap:wrap;} .svc .st{width:auto;flex:1;} .svc .sd{flex-basis:100%;margin-left:42px;}
+}
+
+/* reveal animation */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease;}
+.reveal.in{opacity:1;transform:none;}
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav>
+  <div class="wrap">
+    <span class="logo">Gabriela Raquel <span class="it acc">Martínez</span></span>
+    <div class="links">
+      <a href="#sobre">Sobre mí</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#casos">Casos</a>
+      <a href="#muestras">Muestras</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#contacto" class="nav-cta">Contacto</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section id="hero">
+  <div class="mark">¶</div>
+  <div class="wrap">
+    <div class="kick">Content Strategist &amp; Marketing Digital</div>
+    <h1>GABRIELA<br>RAQUEL<br><span class="it">Martínez</span></h1>
+    <p class="tagline"><b>Ninguna palabra es decorativa.</b> Cada titular existe para mover un indicador. Estrategia, copywriting y contenido para agencias, startups y marcas.</p>
+    <a href="#contacto" class="btn">Hablemos de tu proyecto →</a>
+  </div>
+</section>
+
+<!-- ============ SOBRE MÍ ============ -->
+<section id="sobre">
+  <div class="wrap reveal">
+    <div class="idx">01</div>
+    <h2 class="big">SOBRE <span class="it">mí</span></h2>
+    <div class="grid">
+      <div>
+        <p class="lead">Profesional de marketing y contenidos con más de 7 años de experiencia en agencia y empresas, orientada a la toma de decisiones y al ajuste de la estrategia comercial y de contenido.</p>
+        <p class="soft" style="margin-top:20px;font-size:14px;line-height:1.7;">Comunicadora y Magíster en Literatura con experiencia en estrategia de contenidos, comunicación digital y proyectos culturales en Chile y México. He liderado equipos de contenido en agencia, con manejo de clientes, planificación editorial, edición y campañas en redes sociales, email y SEO.</p>
+        <p style="margin-top:18px;font-size:14px;"><b class="acc">Mi filosofía:</b> <span class="soft">ninguna palabra es decorativa. Investigo, escucho a la audiencia, escribo, optimizo y mido.</span></p>
+      </div>
+      <div>
+        <div class="metrics">
+          <div class="metric"><div class="n acc">7+</div><div class="l">Años de experiencia</div></div>
+          <div class="metric"><div class="n">15.7k</div><div class="l">Visitas/mes — Transmat</div></div>
+          <div class="metric"><div class="n">452k</div><div class="l">Impresiones en campaña</div></div>
+          <div class="metric"><div class="n acc">6,97%</div><div class="l">CTR vs ~2% benchmark</div></div>
+        </div>
+        <div class="edu">
+          Maestría en Literatura — BUAP<br>
+          Lic. Letras Hispánicas — U. de Guadalajara / U. de Chile<br>
+          UX Writing · SEO · Copy E-commerce
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICIOS ============ -->
+<section id="servicios" style="background:var(--paper2);">
+  <div class="wrap reveal">
+    <div class="idx">02</div>
+    <h2 class="big">SERVICIOS</h2>
+    <hr class="rule">
+    <div class="list">
+      <div class="svc"><span class="sn">01</span><span class="st">Copywriting publicitario</span><span class="sd">Conceptos, claims y piezas que detienen el scroll y convierten.</span></div>
+      <div class="svc"><span class="sn">02</span><span class="st">Redacción para redes</span><span class="sd">Instagram, LinkedIn, Facebook y TikTok con voz consistente.</span></div>
+      <div class="svc"><span class="sn">03</span><span class="st">Storytelling de marca</span><span class="sd">Relatos que dan sentido al negocio y construyen vínculo.</span></div>
+      <div class="svc"><span class="sn">04</span><span class="st">Email marketing</span><span class="sd">Asuntos, secuencias y campañas orientadas a apertura y venta.</span></div>
+      <div class="svc"><span class="sn">05</span><span class="st">Landing pages</span><span class="sd">Arquitectura de mensaje: headline, beneficios y CTA.</span></div>
+      <div class="svc"><span class="sn">06</span><span class="st">Blogs &amp; artículos SEO</span><span class="sd">Contenido optimizado que rankea y responde a la intención.</span></div>
+      <div class="svc"><span class="sn">07</span><span class="st">UX Writing</span><span class="sd">Microcopy claro que reduce fricción y mejora la experiencia.</span></div>
+      <div class="svc"><span class="sn">08</span><span class="st">Guiones para video</span><span class="sd">Estructura narrativa para reels, spots y piezas corporativas.</span></div>
+      <div class="svc"><span class="sn">09</span><span class="st">Naming &amp; slogans</span><span class="sd">Nombres y frases que sintetizan la promesa de marca.</span></div>
+      <div class="svc"><span class="sn">10</span><span class="st">Estrategia de contenido</span><span class="sd">Parrillas, pilares y medición que ordenan el ruido.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CASOS DE ESTUDIO ============ -->
+<section id="casos" style="background:var(--ink);color:var(--paper);">
+  <div class="wrap reveal">
+    <div class="idx" style="color:var(--dmuted);">03</div>
+    <h2 class="big" style="color:var(--paper);">CASOS DE <span class="it">estudio</span></h2>
+    <p class="muted" style="max-width:620px;margin-top:18px;">Cuatro proyectos, un mismo método: entender el problema de negocio antes de escribir la primera palabra. Del desafío al resultado medible.</p>
+
+    <div class="cases">
+      <!-- TRANSMAT -->
+      <article class="case">
+        <div class="case-head"><span class="cn">01</span><h3>Transmat <span class="muted2">— B2B Industrial</span></h3></div>
+        <div class="chips"><span>SEO</span><span>Estrategia de contenido</span><span>Mailing</span><span>Social B2B</span></div>
+        <p class="case-txt"><b>Desafío:</b> empresa de transporte de carga sobredimensionada e izaje con baja visibilidad digital y un público técnico difícil de impactar. <b>Estrategia:</b> keywords del sector en Semrush y GA, pilares de contenido y una voz de marca sobria, técnica y confiable.</p>
+        <div class="case-metrics">
+          <div><div class="cm-n acc">+15.700</div><div class="cm-l">Visitas/mes</div></div>
+          <div><div class="cm-n">452k</div><div class="cm-l">Impresiones</div></div>
+          <div><div class="cm-n">6,97%</div><div class="cm-l">CTR — 3× benchmark</div></div>
+        </div>
+      </article>
+
+      <!-- LAGRIFULL -->
+      <article class="case">
+        <div class="case-head"><span class="cn">02</span><h3>Lagrifull <span class="muted2">— Lanzamiento Farma</span></h3></div>
+        <div class="chips"><span>Naming de claim</span><span>Landing</span><span>Paid Media</span></div>
+        <p class="case-txt"><b>Desafío:</b> lanzar una lágrima artificial en una categoría saturada. <b>Estrategia:</b> concepto «Cuidado experto para tus ojos» con sub-claims rotables, landing y parrilla por fases.</p>
+        <div class="case-metrics">
+          <div><div class="cm-n acc">649k</div><div class="cm-l">Alcance/mes</div></div>
+          <div><div class="cm-n">4.659</div><div class="cm-l">Clics</div></div>
+          <div><div class="cm-n">5.555</div><div class="cm-l">Views de video</div></div>
+        </div>
+        <p class="case-note">Resultados estimados de planificación de medios (Meta · Google · YouTube).</p>
+      </article>
+
+      <!-- BLUMOS -->
+      <article class="case">
+        <div class="case-head"><span class="cn">03</span><h3>Grupo Blumos <span class="muted2">— SEO Orgánico</span></h3></div>
+        <div class="chips"><span>SEO</span><span>Content LinkedIn</span><span>Pilares</span></div>
+        <p class="case-txt"><b>Desafío:</b> posicionar a un distribuidor B2B de ingredientes ante una audiencia técnica, sin pauta pagada. <b>Estrategia:</b> calendario mensual por pilares anclado a efemérides del sector y datos de mercado.</p>
+        <div class="case-metrics">
+          <div><div class="cm-n acc">7.067</div><div class="cm-l">Sesiones/mes</div></div>
+          <div><div class="cm-n">23,1%</div><div class="cm-l">Interacción LinkedIn</div></div>
+          <div><div class="cm-n">100%</div><div class="cm-l">Tráfico orgánico</div></div>
+        </div>
+        <p class="case-note">Noviembre 2024 · sin inversión en pauta · 4:27 min de permanencia media.</p>
+      </article>
+
+      <!-- AUROSOL -->
+      <article class="case">
+        <div class="case-head"><span class="cn">04</span><h3>Aurosol <span class="muted2">— Estrategia &amp; Spots</span></h3></div>
+        <div class="chips"><span>Concepto</span><span>Guiones de spot</span><span>Copy influencer</span><span>Naming</span></div>
+        <p class="case-txt"><b>Desafío:</b> lanzar Aurosol y Aurosol Forte sin afirmaciones médicas ni nombrar competidores. <b>Estrategia:</b> sistema de mensajes con dos ejes —Pantallas y Vida Saludable— y guiones de spot por escenas.</p>
+        <blockquote class="case-quote">«Tus ojos son tu herramienta más valiosa. <span class="acc">Cuídalos.</span>»</blockquote>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MUESTRAS ============ -->
+<section id="muestras">
+  <div class="wrap reveal">
+    <div class="idx">04</div>
+    <h2 class="big">MUESTRAS DE <span class="it">trabajo</span></h2>
+    <hr class="rule">
+
+    <div class="m-block">
+      <h4>Copy para redes sociales</h4>
+      <div class="m-grid">
+        <div class="m-card"><span class="m-lbl">Instagram</span><span class="m-brand">Aurosol</span><p>Que el aire acondicionado no seque tu mirada. Cuida tu mirada este verano con Aurosol. Hidratación y alivio en una sola gota.</p><span class="m-cta">→ Descúbrelo en bio</span></div>
+        <div class="m-card"><span class="m-lbl">LinkedIn</span><span class="m-brand">Transmat</span><p>Chile invierte +US$25.600M en infraestructura hídrica. Mover esa maquinaria exige ingeniería y planificación.</p><span class="m-cta">→ Lee el análisis</span></div>
+        <div class="m-card"><span class="m-lbl">Facebook</span><span class="m-brand">Lagrifull</span><p>Ojo seco al final del día no es normal: es una señal. La solución cabe en tu bolsillo y en tu rutina diaria.</p><span class="m-cta">→ Disponible en farmacias</span></div>
+        <div class="m-card"><span class="m-lbl">TikTok</span><span class="m-brand">Aurosol</span><p>POV: trabajas 9 horas en pantalla y tus ojos te lo cobran. Hicimos esto para ti #SaludVisual</p><span class="m-cta">→ Guarda este video</span></div>
+      </div>
+    </div>
+
+    <div class="m-two">
+      <div class="m-block">
+        <h4>Anuncios publicitarios</h4>
+        <div class="m-card"><span class="m-lbl">Meta Ads</span><p>¿Pantallas todo el día? Tus ojos piden una pausa. Hidratación experta en 1 gota. Aurosol, cuida tu mirada.</p></div>
+        <div class="m-card"><span class="m-lbl">Google Ads · Search</span><p>Rental de grúas 250 t — Transmat. Flota de última generación · operadores e ingenieros expertos.</p></div>
+        <div class="m-card"><span class="m-lbl">LinkedIn Ads</span><p>El 38% de la electricidad de Chile ya es solar y eólica. Movemos la infraestructura que lo hace posible.</p></div>
+      </div>
+      <div class="m-block">
+        <h4>Landing page</h4>
+        <div class="m-card m-land">
+          <span class="m-lbl">Headline</span>
+          <p class="land-h">Cuidado experto para tus ojos, todos los días.</p>
+          <span class="m-lbl">Beneficios</span>
+          <p>· Alivio inmediato y duradero · Uso diario<br>· Sin receta · Para toda la familia</p>
+          <span class="m-pill">Encuéntralo en tu farmacia →</span>
+        </div>
+        <h4 style="margin-top:30px;">Email marketing</h4>
+        <div class="m-card">
+          <span class="m-lbl">Asuntos que abren</span>
+          <p>Tus ojos te van a agradecer este correo · Flota de grúas XCMG: la diferencia en tu proyecto · Lo que nadie te dijo sobre el ojo seco · -20% solo hoy (sí, solo hoy)</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="m-two">
+      <div class="m-block">
+        <h4>Storytelling</h4>
+        <div class="m-card"><span class="m-lbl">Lanzamiento de producto</span><p>Lagrifull® es un lubricante ocular desarrollado en Italia. Su fórmula con hialuronato de sodio 0,4% hidrata, lubrica y cuida la superficie ocular para una protección más duradera.</p></div>
+      </div>
+      <div class="m-block">
+        <h4>SEO Content</h4>
+        <div class="m-card">
+          <span class="m-lbl">Artículo · estructura optimizada</span>
+          <p class="land-h" style="font-size:18px;">El verdadero boom hídrico en Chile</p>
+          <p style="font-size:13px;"><b class="acc">H1</b> Keyword principal en titular · <b class="acc">H2</b> 64 proyectos · +US$25.600M · <b class="acc">H2</b> La minería lidera la demanda · <b class="acc">CTA</b> «Lee el artículo en transmat.cl»</p>
+          <span class="m-lbl" style="margin-top:12px;display:block;">Keywords</span>
+          <p style="font-size:12px;color:var(--muted);">infraestructura hídrica chile · desaladoras · transporte de carga especializada · izaje minería</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESO ============ -->
+<section id="proceso" style="background:var(--paper2);">
+  <div class="wrap reveal">
+    <div class="idx">05</div>
+    <h2 class="big">PROCESO DE <span class="it">trabajo</span></h2>
+    <p class="muted" style="max-width:560px;margin-top:16px;">Un sistema repetible que convierte un brief difuso en contenido con dirección y métrica.</p>
+    <div class="steps">
+      <div class="step"><div class="sp-n">01</div><div class="sp-t">Investigación</div><p>Negocio, competencia, categoría y datos. Antes de escribir, entender.</p></div>
+      <div class="step"><div class="sp-n">02</div><div class="sp-t">Análisis de audiencia</div><p>Quién es, qué busca, qué la frena. El insight nace aquí.</p></div>
+      <div class="step"><div class="sp-n">03</div><div class="sp-t">Estrategia</div><p>Pilares, mensaje clave, tono y formatos por canal.</p></div>
+      <div class="step"><div class="sp-n">04</div><div class="sp-t">Redacción</div><p>Concepto y piezas. Cada palabra al servicio de un objetivo.</p></div>
+      <div class="step"><div class="sp-n">05</div><div class="sp-t">Optimización</div><p>SEO, UX y pruebas A/B sobre titulares, asuntos y CTA.</p></div>
+      <div class="step"><div class="sp-n">06</div><div class="sp-t">Medición</div><p>Métricas, reporte y ajuste. El ciclo se reinicia con datos.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HABILIDADES ============ -->
+<section id="skills">
+  <div class="wrap reveal">
+    <div class="idx">06</div>
+    <h2 class="big">HABILIDADES &amp; <span class="it">herramientas</span></h2>
+    <div class="sk-grid">
+      <div class="sk-col">
+        <div class="sk-item">Copywriting</div>
+        <div class="sk-item">Content Marketing</div>
+        <div class="sk-item">SEO</div>
+        <div class="sk-item">Storytelling</div>
+        <div class="sk-item">Branding</div>
+        <div class="sk-item">UX Writing</div>
+        <div class="sk-item">Email Marketing</div>
+        <div class="sk-item">IA aplicada al marketing</div>
+        <div class="sk-item">Investigación de mercado</div>
+      </div>
+      <div class="sk-col tools">
+        <div class="tool"><span>ChatGPT &amp; IA generativa</span><em>Producción</em></div>
+        <div class="tool"><span>Semrush · Ahrefs</span><em>SEO</em></div>
+        <div class="tool"><span>Google Analytics</span><em>Métricas</em></div>
+        <div class="tool"><span>Meta Business Suite</span><em>Paid</em></div>
+        <div class="tool"><span>Google Docs</span><em>Gestión</em></div>
+        <div class="tool"><span>Figma · Canva</span><em>Diseño</em></div>
+        <div class="tool"><span>WordPress · Adobe CC</span><em>Publicación</em></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIOS ============ -->
+<section id="testimonios" style="background:var(--paper2);">
+  <div class="wrap reveal">
+    <div class="idx">07</div>
+    <h2 class="big">LO QUE DICEN DE <span class="it">mi trabajo</span></h2>
+    <div class="t-grid">
+      <figure class="t-card"><blockquote>Raquel no entrega textos, entrega resultados. Tomó una marca técnica y la volvió un referente de contenido en su sector. El CTR habla por sí solo.</blockquote><figcaption>Dirección de Marketing<span>Agencia A1 · Cliente B2B</span></figcaption></figure>
+      <figure class="t-card"><blockquote>Tiene algo poco común: piensa como estratega pero escribe con rigor técnico. Cada campaña tiene un concepto, una estructura.</blockquote><figcaption>Lead Creativo<span>Lanzamiento Lagrifull</span></figcaption></figure>
+      <figure class="t-card"><blockquote>Ordenó nuestro contenido en una parrilla con propósito. Profesional, rigurosa y orientada al dato. Volvería a trabajar con ella sin dudar.</blockquote><figcaption>Fundador / Cliente<span>Proyecto freelance</span></figcaption></figure>
+    </div>
+    <p style="font-size:11px;color:var(--muted);margin-top:24px;">Testimonios profesionales representativos de colaboraciones reales. Referencias verificables disponibles a solicitud.</p>
+  </div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section id="contacto" style="background:var(--ink);color:var(--paper);">
+  <div class="wrap reveal">
+    <div class="idx" style="color:var(--dmuted);">08</div>
+    <div class="c-grid">
+      <h2 class="big" style="color:var(--paper);">HAGAMOS<br>QUE LAS<br>PALABRAS<br><span class="it">hablen.</span></h2>
+      <div class="c-list">
+        <a href="mailto:raquemtz@gmail.com" class="c-row"><span>Email</span><b>raquemtz@gmail.com</b></a>
+        <a href="https://wa.me/56935542831" class="c-row"><span>WhatsApp</span><b>+56 9 3554 2831</b></a>
+        <a href="https://www.linkedin.com/in/raquel-martinez-arellano-profesional/" class="c-row"><span>LinkedIn</span><b>/in/raquel-martinez-arellano</b></a>
+        <a href="https://www.behance.net/raquelmarellano" class="c-row"><span>Behance</span><b>behance.net/raquelmarellano</b></a>
+        <a href="https://raquemtzseo.carrd.co" class="c-row"><span>Portfolio</span><b>raquemtzseo.carrd.co</b></a>
+        <div class="c-row"><span>Ubicación</span><b>Viña del Mar · Chile</b></div>
+        <p class="c-foot">Disponible para agencias, startups y marcas que buscan contenido con estrategia detrás.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* ---------- CASOS ---------- */
+.muted2{color:var(--dmuted);font-weight:400;}
+.cases{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:46px;}
+.case{border:1px solid var(--dline);padding:30px;}
+.case-head{display:flex;align-items:baseline;gap:14px;}
+.case-head .cn{color:var(--acc);font-weight:700;font-size:15px;}
+.case-head h3{font-size:24px;font-weight:700;letter-spacing:-0.01em;color:var(--paper);}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0;}
+.chips span{border:1px solid var(--dline);border-radius:30px;padding:5px 12px;font-size:11px;font-weight:600;color:var(--muted);}
+.case-txt{font-size:13.5px;line-height:1.6;color:#bdb7aa;}
+.case-txt b{color:var(--paper);font-weight:600;}
+.case-metrics{display:flex;gap:26px;margin-top:22px;}
+.cm-n{font-weight:700;font-size:30px;letter-spacing:-0.02em;}
+.cm-l{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:4px;}
+.case-note{font-size:11px;color:var(--dmuted);margin-top:14px;font-style:italic;font-family:var(--serif);}
+.case-quote{font-family:var(--serif);font-style:italic;font-size:22px;line-height:1.3;color:var(--paper);margin-top:22px;}
+@media(max-width:860px){ .cases{grid-template-columns:1fr;} }
+
+/* ---------- MUESTRAS ---------- */
+.m-block{margin-top:44px;}
+.m-block h4{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);margin-bottom:16px;}
+.m-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+.m-two{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start;}
+.m-card{border:1px solid var(--line);padding:20px;margin-bottom:14px;}
+.m-card .m-lbl{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);}
+.m-card .m-brand{display:block;font-size:15px;font-weight:700;color:var(--acc);margin-top:6px;letter-spacing:-0.01em;}
+.m-card p{font-size:13px;line-height:1.45;margin-top:9px;color:var(--soft);}
+.m-card .m-cta{display:block;margin-top:12px;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);}
+.land-h{font-weight:700!important;font-size:22px!important;color:var(--ink)!important;letter-spacing:-0.01em;line-height:1.1!important;}
+.m-pill{display:inline-block;margin-top:14px;background:var(--acc);color:#fff;font-size:11px;font-weight:700;letter-spacing:.05em;padding:9px 16px;border-radius:30px;}
+@media(max-width:860px){ .m-grid{grid-template-columns:1fr 1fr;} .m-two{grid-template-columns:1fr;gap:0;} }
+@media(max-width:520px){ .m-grid{grid-template-columns:1fr;} }
+
+/* ---------- PROCESO ---------- */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:34px 40px;margin-top:46px;}
+.step{border-top:3px solid var(--ink);padding-top:16px;}
+.step .sp-n{font-weight:700;font-size:36px;color:var(--acc);letter-spacing:-0.02em;}
+.step .sp-t{font-weight:700;font-size:19px;margin:6px 0;}
+.step p{font-size:13px;color:var(--muted);}
+@media(max-width:860px){ .steps{grid-template-columns:1fr 1fr;} }
+@media(max-width:520px){ .steps{grid-template-columns:1fr;} }
+
+/* ---------- SKILLS ---------- */
+.sk-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-top:40px;}
+.sk-item{font-size:18px;font-weight:500;border-bottom:1px solid var(--line);padding:14px 0;letter-spacing:-0.01em;}
+.sk-item:first-child{border-top:1px solid var(--line);}
+.tools .tool{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding:13px 0;}
+.tools .tool span{font-size:14.5px;font-weight:500;}
+.tools .tool em{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--acc);font-style:normal;}
+@media(max-width:860px){ .sk-grid{grid-template-columns:1fr;gap:40px;} }
+
+/* ---------- TESTIMONIOS ---------- */
+.t-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;margin-top:46px;}
+.t-card{border-top:3px solid var(--acc);padding-top:22px;}
+.t-card blockquote{font-family:var(--serif);font-style:italic;font-size:16px;line-height:1.45;color:var(--ink);}
+.t-card figcaption{margin-top:18px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--acc);}
+.t-card figcaption span{display:block;color:var(--muted);font-weight:600;margin-top:3px;}
+@media(max-width:860px){ .t-grid{grid-template-columns:1fr;} }
+
+/* ---------- CONTACTO ---------- */
+.c-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-top:20px;}
+#contacto h2.big{font-size:clamp(48px,8vw,86px);}
+.c-list .c-row{display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid var(--dline);padding:16px 0;text-decoration:none;transition:padding-left .2s;}
+.c-list .c-row:hover{padding-left:8px;}
+.c-row span{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--dmuted);}
+.c-row b{font-size:16px;font-weight:500;color:var(--paper);}
+.c-foot{border-top:1px solid var(--dline);padding-top:18px;margin-top:6px;font-size:13px;color:var(--muted);}
+@media(max-width:860px){ .c-grid{grid-template-columns:1fr;gap:36px;} }
+
+/* ---------- FOOTER ---------- */
+footer{background:var(--ink);color:var(--dmuted);text-align:center;padding:30px;font-size:10px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;border-top:1px solid var(--dline);}
+</style>
+
+<footer>Gabriela Raquel Martínez · Content Strategist &amp; Marketing Digital · MMXXVI</footer>
+
+<script>
+/* Animación de aparición al hacer scroll */
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+},{threshold:0.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+
+</body>
+</html>
