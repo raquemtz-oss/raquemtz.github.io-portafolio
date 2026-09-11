@@ -7,16 +7,17 @@
 <meta name="description" content="Portafolio de marketing y contenidos de Gabriela Raquel Martínez. Copywriting, branding, SEO, storytelling y UX writing. Viña del Mar, Chile.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Lora:ital@1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Lora:ital@1&display=swap" rel="stylesheet">
 <style>
 /* ============================================================
-   SISTEMA DE DISEÑO — Editorial Bold · Naranja brasa
+   SISTEMA DE DISEÑO — Bold tipográfico · naranja brasa
+   Edita aquí los colores si quieres
    ============================================================ */
 :root{
-  --ink:#0C0C0C;        
-  --paper:#F2EFE9;      
+  --ink:#0C0C0C;        /* casi negro */
+  --paper:#F2EFE9;      /* hueso (fondo) */
   --paper2:#E7E2D8;
-  --acc:#FF4D23;        
+  --acc:#FF4D23;        /* naranja brasa (acento) */
   --soft:#3A382F;
   --muted:#8A8478;
   --dmuted:#6C675C;
@@ -30,147 +31,152 @@ html{scroll-behavior:smooth;}
 body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased;}
 .it{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--acc);}
 .acc{color:var(--acc);}
-section{padding:90px 0;}
-.wrap{max-width:1180px;margin:0 auto;padding:0 32px;}
-.kick{font-size:12px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--acc);margin-bottom:16px;}
+section{padding:110px 0;}
+.wrap{max-width:1180px;margin:0 auto;padding:0 40px;}
+.kick{font-size:13px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--acc);margin-bottom:18px;}
 .idx{font-size:11px;font-weight:700;letter-spacing:.2em;color:var(--muted);margin-bottom:10px;}
-h2.big{font-weight:700;font-size:clamp(38px,6.2vw,80px);line-height:0.94;letter-spacing:-0.035em;}
-.lead{font-size:clamp(17px,2.2vw,22px);font-weight:500;line-height:1.45;}
+h2.big{font-weight:700;font-size:clamp(42px,7vw,86px);line-height:0.92;letter-spacing:-0.035em;}
+.lead{font-size:clamp(18px,2.4vw,24px);font-weight:500;line-height:1.4;}
 .muted{color:var(--muted);}
 .soft{color:var(--soft);}
-.rule{width:54px;height:4px;background:var(--acc);border:0;margin:20px 0;}
-a{color:inherit;text-decoration:none;}
+.rule{width:54px;height:4px;background:var(--acc);border:0;margin:22px 0;}
+a{color:inherit;}
 
 /* ---------- NAV ---------- */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(12,12,12,.95);
-  backdrop-filter:blur(10px);border-bottom:1px solid var(--dline);}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(12,12,12,.92);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--dline);}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:16px;padding-bottom:16px;}
 nav .logo{color:var(--paper);font-weight:700;font-size:15px;letter-spacing:-0.01em;}
 nav .logo .it{font-size:16px;}
-nav .links{display:flex;gap:24px;align-items:center;}
-nav .links a{color:var(--muted);font-size:11.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;transition:color .2s;}
+nav .links{display:flex;gap:26px;}
+nav .links a{color:var(--muted);text-decoration:none;font-size:12px;font-weight:600;
+  letter-spacing:.08em;text-transform:uppercase;transition:color .2s;}
 nav .links a:hover{color:var(--acc);}
-.nav-cta{color:var(--paper)!important;border:1px solid var(--acc);border-radius:30px;padding:6px 18px;transition:background .2s;}
+.nav-cta{color:var(--paper)!important;border:1px solid var(--acc);border-radius:30px;padding:7px 16px;}
 .nav-cta:hover{background:var(--acc);}
 @media(max-width:860px){ nav .links{display:none;} }
 
 /* ---------- HERO ---------- */
-#hero{background:var(--ink);color:var(--paper);min-height:90vh;display:flex;align-items:center;
-  position:relative;overflow:hidden;padding-top:80px;}
-#hero .mark{position:absolute;right:-20px;top:40px;font-family:var(--serif);font-style:italic;
-  font-size:min(580px,65vw);color:#151412;line-height:1;pointer-events:none;user-select:none;}
+#hero{background:var(--ink);color:var(--paper);min-height:100vh;display:flex;align-items:center;
+  position:relative;overflow:hidden;padding-top:90px;}
+#hero .mark{position:absolute;right:-40px;top:60px;font-family:var(--serif);font-style:italic;
+  font-size:min(620px,68vw);color:#161512;line-height:1;pointer-events:none;}
 #hero .wrap{position:relative;z-index:2;}
-#hero h1{font-weight:700;font-size:clamp(52px,10vw,114px);line-height:0.92;letter-spacing:-0.04em;color:var(--paper);}
-#hero h1 .it{font-size:clamp(48px,9.5vw,106px);}
-#hero .tagline{font-size:clamp(16px,2vw,19px);color:var(--muted);max-width:560px;margin-top:26px;line-height:1.55;}
+#hero h1{font-weight:700;font-size:clamp(56px,12vw,128px);line-height:0.92;letter-spacing:-0.045em;color:var(--paper);}
+#hero h1 .it{font-size:clamp(52px,11.5vw,118px);}
+#hero .tagline{font-size:clamp(16px,2vw,20px);color:var(--muted);max-width:560px;margin-top:30px;line-height:1.5;}
 #hero .tagline b{color:var(--paper);font-weight:600;}
-.btn{display:inline-block;margin-top:32px;background:var(--acc);color:#fff;font-weight:700;font-size:13.5px;letter-spacing:.04em;padding:14px 30px;border-radius:32px;transition:transform .2s;}
+.btn{display:inline-block;margin-top:34px;background:var(--acc);color:#fff;text-decoration:none;
+  font-weight:700;font-size:14px;letter-spacing:.04em;padding:15px 30px;border-radius:32px;transition:transform .2s;}
 .btn:hover{transform:translateY(-2px);}
 
-/* ---------- SOBRE MÍ CON SKILLS INTEGRADAS ---------- */
-#sobre .grid{display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:start;margin-top:28px;}
-.metrics{display:grid;grid-template-columns:1fr 1fr;gap:24px 20px;}
-.metric .n{font-weight:700;font-size:clamp(38px,4.5vw,52px);letter-spacing:-0.03em;line-height:1;}
-.metric .l{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:6px;}
-.edu{border-top:1px solid var(--line);margin-top:26px;padding-top:16px;font-size:11px;font-weight:700;
-  letter-spacing:.08em;color:var(--muted);line-height:1.9;text-transform:uppercase;}
-.skills-box{margin-top:24px;border-top:1px solid var(--line);padding-top:18px;}
-.skills-box-title{font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--acc);margin-bottom:10px;}
-.tags-inline{display:flex;flex-wrap:wrap;gap:7px;}
-.tag-badge{background:var(--paper2);color:var(--soft);font-size:11.5px;font-weight:600;padding:5px 12px;border-radius:20px;}
-.tag-tool{background:transparent;border:1px solid var(--line);color:var(--muted);font-size:11px;font-weight:500;padding:4px 10px;border-radius:20px;}
-
-@media(max-width:860px){ #sobre .grid{grid-template-columns:1fr;gap:36px;} }
+/* ---------- SOBRE MÍ ---------- */
+#sobre .grid{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:start;margin-top:30px;}
+#sobre h2.big .it{display:block;}
+.metrics{display:grid;grid-template-columns:1fr 1fr;gap:30px 26px;}
+.metric .n{font-weight:700;font-size:clamp(44px,5vw,62px);letter-spacing:-0.03em;line-height:1;}
+.metric .l{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:8px;}
+.edu{border-top:1px solid var(--line);margin-top:34px;padding-top:18px;font-size:11px;font-weight:700;
+  letter-spacing:.08em;color:var(--muted);line-height:2;text-transform:uppercase;}
+.tag-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px;}
+.tag-row span{border:1px solid var(--line);border-radius:30px;padding:7px 14px;font-size:11.5px;
+  font-weight:600;color:var(--dmuted);}
+@media(max-width:860px){ #sobre .grid{grid-template-columns:1fr;gap:40px;} }
 
 /* ---------- SERVICIOS ---------- */
-#servicios .list{column-count:2;column-gap:50px;margin-top:30px;}
-.svc{display:flex;gap:14px;align-items:baseline;border-top:1px solid var(--line);padding:15px 0;break-inside:avoid;}
-.svc .sn{color:var(--acc);font-weight:700;font-size:13px;min-width:24px;}
-.svc .st{font-weight:700;font-size:16px;flex:0 0 auto;width:45%;letter-spacing:-0.01em;}
-.svc .sd{color:var(--muted);font-size:12.5px;flex:1;line-height:1.4;}
+#servicios .list{column-count:2;column-gap:60px;margin-top:30px;}
+.svc{display:flex;gap:16px;align-items:baseline;border-top:1px solid var(--line);padding:18px 0;break-inside:avoid;}
+.svc .sn{color:var(--acc);font-weight:700;font-size:13px;min-width:26px;}
+.svc .st{font-weight:700;font-size:17px;flex:0 0 auto;width:44%;letter-spacing:-0.01em;}
+.svc .sd{color:var(--muted);font-size:13px;flex:1;}
 @media(max-width:860px){
   #servicios .list{column-count:1;}
-  .svc{flex-wrap:wrap;} .svc .st{width:auto;flex:1;} .svc .sd{flex-basis:100%;margin-left:38px;}
+  .svc{flex-wrap:wrap;} .svc .st{width:auto;flex:1;} .svc .sd{flex-basis:100%;margin-left:42px;}
 }
 
-/* ---------- TRABAJO REAL (CASOS FUSIONADOS) ---------- */
-#trabajo{background:var(--ink);color:var(--paper);}
-.work-item{margin-top:54px;padding:34px;border:1px solid var(--dline);border-radius:4px;background:#100f0d;}
-.work-item:first-of-type{margin-top:36px;}
-.work-header{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;margin-bottom:18px;}
-.work-title-wrap{display:flex;align-items:baseline;gap:12px;}
-.work-num{color:var(--acc);font-weight:700;font-size:15px;}
-.work-title{font-size:26px;font-weight:700;letter-spacing:-0.02em;color:var(--paper);}
-.work-title .work-sub{color:var(--dmuted);font-weight:400;font-size:18px;}
-.chips{display:flex;flex-wrap:wrap;gap:8px;}
-.chips span{border:1px solid var(--dline);border-radius:30px;padding:4px 11px;font-size:10px;font-weight:600;color:var(--muted);}
-.work-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:36px;align-items:center;margin-top:16px;}
-.work-narrative{font-size:13.5px;line-height:1.65;color:#bbb4a6;}
-.work-narrative b{color:var(--paper);font-weight:600;}
-.work-metrics{display:flex;gap:26px;margin-top:20px;border-top:1px solid var(--dline);padding-top:16px;}
-.work-metrics .wm-n{font-weight:700;font-size:26px;letter-spacing:-0.02em;line-height:1;}
-.work-metrics .wm-l{font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:5px;}
+/* reveal animation */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease;}
+.reveal.in{opacity:1;transform:none;}
 
-/* Carrusel visual con botones interactivos */
-.carousel-container{position:relative;margin-top:24px;}
-.carousel-top-bar{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;}
-.carousel-label{font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);display:flex;align-items:center;gap:6px;}
-.carousel-nav-btn{background:#1a1916;border:1px solid var(--dline);color:var(--paper);width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:14px;display:inline-flex;align-items:center;justify-content:center;transition:background .2s, border-color .2s;}
-.carousel-nav-btn:hover{background:var(--acc);border-color:var(--acc);}
-.img-carousel{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding-bottom:14px;-webkit-overflow-scrolling:touch;}
-.img-carousel img{scroll-snap-align:start;height:320px;width:auto;flex:0 0 auto;border-radius:2px;display:block;border:1px solid #201f1c;background:#151412;}
+/* ---------- CARRUSEL DE IMÁGENES REALES ---------- */
+.img-carousel{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;
+  margin-top:24px;padding-bottom:12px;-webkit-overflow-scrolling:touch;}
+.img-carousel img{scroll-snap-align:start;height:360px;width:auto;flex:0 0 auto;
+  border-radius:2px;display:block;}
 .img-carousel::-webkit-scrollbar{height:6px;}
-.img-carousel::-webkit-scrollbar-track{background:rgba(255,255,255,0.03);}
+.img-carousel::-webkit-scrollbar-track{background:transparent;}
 .img-carousel::-webkit-scrollbar-thumb{background:var(--acc);border-radius:3px;}
+.carousel-label{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--dmuted);margin-top:22px;}
+@media(max-width:640px){ .img-carousel img{height:280px;} }
+.newsletter-frame{max-height:400px;overflow-y:auto;border:1px solid var(--line);margin-top:24px;background:var(--paper);}
+.newsletter-frame img{width:100%;height:auto;display:block;}
+.newsletter-frame::-webkit-scrollbar{width:6px;}
+.newsletter-frame::-webkit-scrollbar-track{background:transparent;}
+.newsletter-frame::-webkit-scrollbar-thumb{background:var(--acc);border-radius:3px;}
 
-/* Bloque Copy / Extras */
-.copy-sample-box{background:#161513;border:1px solid var(--dline);border-radius:3px;padding:16px 20px;}
-.copy-sample-title{font-size:9.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;}
-.copy-sample-text{font-size:13px;line-height:1.5;color:var(--paper);font-style:italic;}
+/* ---------- TRABAJO REAL (casos + muestras fusionados) ---------- */
+.case-full{border-top:1px solid var(--line);padding:52px 0 56px;}
+.case-full:first-of-type{border-top:0;padding-top:8px;}
+.case-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;}
+.case-head .cn{color:var(--acc);font-weight:700;font-size:15px;}
+.case-head h3{font-size:clamp(26px,3vw,34px);font-weight:700;letter-spacing:-0.01em;color:var(--ink);}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 6px;}
+.chips span{border:1px solid var(--line);border-radius:30px;padding:5px 12px;font-size:11px;font-weight:600;color:var(--dmuted);}
+.case-txt{font-size:14.5px;line-height:1.65;color:var(--soft);max-width:760px;margin-top:12px;}
+.case-txt b{color:var(--ink);font-weight:700;}
+.case-metrics{display:flex;flex-wrap:wrap;gap:26px 40px;margin-top:26px;}
+.cm-n{font-weight:700;font-size:30px;letter-spacing:-0.02em;color:var(--ink);}
+.cm-l{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:4px;}
+.case-note{font-size:11.5px;color:var(--dmuted);margin-top:12px;font-style:italic;font-family:var(--serif);}
+.case-quote{font-family:var(--serif);font-style:italic;font-size:22px;line-height:1.3;color:var(--ink);margin-top:24px;}
+.m-block{margin-top:36px;}
+.m-block h4{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);margin-bottom:14px;}
+.m-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+.m-two{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start;margin-top:36px;}
+.m-card{border:1px solid var(--line);padding:18px;margin-bottom:14px;background:var(--paper);}
+.m-card .m-lbl{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);}
+.m-card .m-brand{display:block;font-size:15px;font-weight:700;color:var(--acc);margin-top:6px;letter-spacing:-0.01em;}
+.m-card p{font-size:13px;line-height:1.45;margin-top:9px;color:var(--soft);}
+.m-card .m-cta{display:block;margin-top:12px;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);}
+.land-h{font-weight:700!important;font-size:22px!important;color:var(--ink)!important;letter-spacing:-0.01em;line-height:1.1!important;}
+.m-pill{display:inline-block;margin-top:14px;background:var(--acc);color:#fff;font-size:11px;font-weight:700;letter-spacing:.05em;padding:9px 16px;border-radius:30px;}
+@media(max-width:860px){ .m-grid{grid-template-columns:1fr 1fr;} .m-two{grid-template-columns:1fr;gap:0;} }
+@media(max-width:520px){ .m-grid{grid-template-columns:1fr;} }
 
-/* Bloque Sitios Web / UX */
-.web-block{margin-top:60px;}
-.web-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));gap:20px;margin-top:24px;}
-.web-card{border:1px solid var(--dline);background:#100f0d;padding:24px;border-radius:4px;display:flex;flex-direction:column;justify-content:space-between;transition:border-color .2s, transform .2s;}
-.web-card:hover{border-color:var(--acc);transform:translateY(-3px);}
-.web-card-tag{font-size:9.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);}
-.web-card-name{font-size:18px;font-weight:700;color:var(--paper);margin:10px 0 6px;}
-.web-card-desc{font-size:12.5px;color:var(--muted);line-height:1.45;margin-bottom:16px;}
-.web-card-link{font-size:11px;font-weight:700;color:var(--paper);letter-spacing:.06em;text-transform:uppercase;display:inline-flex;align-items:center;gap:6px;}
-.web-card-link span{color:var(--acc);}
-
-@media(max-width:860px){
-  .work-grid{grid-template-columns:1fr;gap:20px;}
-  .work-item{padding:20px;}
-  .img-carousel img{height:250px;}
-}
+/* ---------- MÁS PROYECTOS (links reales) ---------- */
+.more-projects{margin-top:70px;padding-top:46px;border-top:1px solid var(--line);}
+.more-projects h4{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--dmuted);margin-bottom:22px;}
+.mp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.mp-card{display:block;border:1px solid var(--line);padding:24px;text-decoration:none;transition:border-color .2s,transform .2s;}
+.mp-card:hover{border-color:var(--acc);transform:translateY(-2px);}
+.mp-card .mp-name{font-weight:700;font-size:16px;color:var(--ink);letter-spacing:-0.01em;}
+.mp-card .mp-desc{font-size:12.5px;color:var(--soft);line-height:1.5;margin-top:8px;}
+.mp-card .mp-link{display:block;margin-top:16px;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--acc);}
+@media(max-width:860px){ .mp-grid{grid-template-columns:1fr 1fr;} }
+@media(max-width:520px){ .mp-grid{grid-template-columns:1fr;} }
 
 /* ---------- PROCESO ---------- */
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:32px 36px;margin-top:42px;}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:34px 40px;margin-top:46px;}
 .step{border-top:3px solid var(--ink);padding-top:16px;}
-.step .sp-n{font-weight:700;font-size:32px;color:var(--acc);letter-spacing:-0.02em;}
-.step .sp-t{font-weight:700;font-size:18px;margin:5px 0;}
-.step p{font-size:12.5px;color:var(--soft);line-height:1.45;}
+.step .sp-n{font-weight:700;font-size:36px;color:var(--acc);letter-spacing:-0.02em;}
+.step .sp-t{font-weight:700;font-size:19px;margin:6px 0;}
+.step p{font-size:13px;color:var(--muted);}
 @media(max-width:860px){ .steps{grid-template-columns:1fr 1fr;} }
 @media(max-width:520px){ .steps{grid-template-columns:1fr;} }
 
 /* ---------- CONTACTO ---------- */
-#contacto{background:var(--ink);color:var(--paper);border-top:1px solid var(--dline);}
-.c-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-top:16px;}
-#contacto h2.big{font-size:clamp(42px,7.2vw,78px);}
-.c-list .c-row{display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid var(--dline);padding:15px 0;transition:padding-left .2s;}
+.c-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-top:20px;}
+#contacto h2.big{font-size:clamp(48px,8vw,86px);}
+.c-list .c-row{display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid var(--dline);padding:16px 0;text-decoration:none;transition:padding-left .2s;}
 .c-list .c-row:hover{padding-left:8px;}
-.c-row span{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--dmuted);}
-.c-row b{font-size:15px;font-weight:500;color:var(--paper);}
-.c-foot{border-top:1px solid var(--dline);padding-top:16px;margin-top:6px;font-size:13px;color:var(--muted);}
+.c-row span{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--dmuted);}
+.c-row b{font-size:16px;font-weight:500;color:var(--paper);}
+.c-foot{border-top:1px solid var(--dline);padding-top:18px;margin-top:6px;font-size:13px;color:var(--muted);}
 @media(max-width:860px){ .c-grid{grid-template-columns:1fr;gap:36px;} }
 
 /* ---------- FOOTER ---------- */
-footer{background:#080808;color:var(--dmuted);text-align:center;padding:26px;font-size:9.5px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;border-top:1px solid #1a1917;}
-
-/* Animaciones */
-.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease;}
-.reveal.in{opacity:1;transform:none;}
+footer{background:var(--ink);color:var(--dmuted);text-align:center;padding:30px;font-size:10px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;border-top:1px solid var(--dline);}
 </style>
 </head>
 <body>
@@ -182,7 +188,7 @@ footer{background:#080808;color:var(--dmuted);text-align:center;padding:26px;fon
     <div class="links">
       <a href="#sobre">Sobre mí</a>
       <a href="#servicios">Servicios</a>
-      <a href="#trabajo">Trabajo Real</a>
+      <a href="#trabajo">Trabajo real</a>
       <a href="#proceso">Proceso</a>
       <a href="#contacto" class="nav-cta">Contacto</a>
     </div>
@@ -195,21 +201,20 @@ footer{background:#080808;color:var(--dmuted);text-align:center;padding:26px;fon
   <div class="wrap">
     <div class="kick">Content Strategist &amp; Marketing Digital</div>
     <h1>GABRIELA<br>RAQUEL<br><span class="it">Martínez</span></h1>
-    <p class="tagline"><b>Ninguna palabra es decorativa.</b> Cada titular existe para mover un indicador. Estrategia, redacción editorial, copywriting y contenidos para marcas y plataformas digitales.</p>
-    <a href="#trabajo" class="btn">Explorar trabajo real</a>
+    <p class="tagline"><b>Ninguna palabra es decorativa.</b> Cada titular existe para mover un indicador. Estrategia, copywriting y contenido para agencias, startups y marcas.</p>
   </div>
 </section>
 
-<!-- ============ SOBRE MÍ (CON SKILLS Y TOOLS INTEGRADAS) ============ -->
+<!-- ============ SOBRE MÍ ============ -->
 <section id="sobre">
   <div class="wrap reveal">
     <div class="idx">01</div>
     <h2 class="big">SOBRE <span class="it">mí</span></h2>
     <div class="grid">
       <div>
-        <p class="lead">Profesional de contenidos y marketing con más de 7 años de experiencia orientada al rigor estratégico, la articulación de marca y el ajuste continuo con datos comerciales.</p>
-        <p class="soft" style="margin-top:16px;font-size:14px;line-height:1.7;">Comunicadora y Magíster en Literatura con amplia experiencia en dirección de contenidos, corrección de estilo, gestión editorial y campañas digitales en Chile y México. He liderado equipos en agencia, planificaciones editoriales, SEO técnico de contenidos y storytelling de alto impacto.</p>
-        <p style="margin-top:16px;font-size:13.5px;"><b class="acc">Criterio:</b> <span class="soft">investigación de mercado, rigor lingüístico y diseño del mensaje pensado directamente en la acción del lector.</span></p>
+        <p class="lead">Profesional de marketing y contenidos con más de 7 años de experiencia en agencia y empresas, orientada a la toma de decisiones y al ajuste de la estrategia comercial y de contenido.</p>
+        <p class="soft" style="margin-top:20px;font-size:14px;line-height:1.7;">Comunicadora y Magíster en Literatura con experiencia en estrategia de contenidos, comunicación digital y proyectos culturales en Chile y México. He liderado equipos de contenido en agencia, con manejo de clientes, planificación editorial, edición y campañas en redes sociales, email y SEO.</p>
+        <p style="margin-top:18px;font-size:14px;"><b class="acc">Mi filosofía:</b> <span class="soft">ninguna palabra es decorativa. Investigo, escucho a la audiencia, escribo, optimizo y mido.</span></p>
       </div>
       <div>
         <div class="metrics">
@@ -221,32 +226,17 @@ footer{background:#080808;color:var(--dmuted);text-align:center;padding:26px;fon
         <div class="edu">
           Maestría en Literatura — BUAP<br>
           Lic. Letras Hispánicas — U. de Guadalajara / U. de Chile<br>
-          UX Writing · SEO · Corrección de Estilo
+          UX Writing · SEO · Copy E-commerce
         </div>
-        
-        <!-- HABILIDADES & HERRAMIENTAS INTEGRADAS -->
-        <div class="skills-box">
-          <div class="skills-box-title">Especialidades de Contenido</div>
-          <div class="tags-inline">
-            <span class="tag-badge">Copywriting</span>
-            <span class="tag-badge">Corrección de Estilo</span>
-            <span class="tag-badge">Content Marketing</span>
-            <span class="tag-badge">SEO</span>
-            <span class="tag-badge">Storytelling</span>
-            <span class="tag-badge">UX Writing</span>
-            <span class="tag-badge">Email Marketing</span>
-          </div>
-          <div class="skills-box-title" style="margin-top:14px;">Herramientas &amp; Software</div>
-          <div class="tags-inline">
-            <span class="tag-tool">Semrush · Ahrefs</span>
-            <span class="tag-tool">Google Analytics</span>
-            <span class="tag-tool">Meta Business Suite</span>
-            <span class="tag-tool">Figma · Adobe XD</span>
-            <span class="tag-tool">ChatGPT &amp; IA aplicada</span>
-            <span class="tag-tool">WordPress</span>
-          </div>
+        <div class="tag-row">
+          <span>Copywriting</span><span>Content Marketing</span><span>SEO</span>
+          <span>Storytelling</span><span>Branding</span><span>UX Writing</span>
+          <span>Email Marketing</span><span>IA aplicada al marketing</span>
+          <span>Investigación de mercado</span><span>ChatGPT &amp; IA generativa</span>
+          <span>Semrush · Ahrefs</span><span>Google Analytics</span>
+          <span>Meta Business Suite</span><span>Figma · Canva</span>
+          <span>WordPress · Adobe CC</span>
         </div>
-
       </div>
     </div>
   </div>
@@ -259,251 +249,196 @@ footer{background:#080808;color:var(--dmuted);text-align:center;padding:26px;fon
     <h2 class="big">SERVICIOS</h2>
     <hr class="rule">
     <div class="list">
-      <div class="svc"><span class="sn">01</span><span class="st">Copywriting publicitario</span><span class="sd">Conceptos, claims y textos que detienen el scroll y convierten.</span></div>
-      <div class="svc"><span class="sn">02</span><span class="st">Redacción y redes sociales</span><span class="sd">Instagram, LinkedIn, Facebook con rigor de voz y engagement real.</span></div>
-      <div class="svc"><span class="sn">03</span><span class="st">Edición y corrección de estilo</span><span class="sd">Cuidado ortotipográfico riguroso y optimización de legibilidad.</span></div>
-      <div class="svc"><span class="sn">04</span><span class="st">Storytelling &amp; Branding</span><span class="sd">Narrativas corporativas que conectan la promesa de marca con la audiencia.</span></div>
-      <div class="svc"><span class="sn">05</span><span class="st">Email marketing</span><span class="sd">Secuencias estructuradas para generar aperturas, clics y retención.</span></div>
-      <div class="svc"><span class="sn">06</span><span class="st">Sitios web &amp; UX Writing</span><span class="sd">Microcopy funcional y arquitectura de contenidos que disuelven fricciones.</span></div>
-      <div class="svc"><span class="sn">07</span><span class="st">Artículos y SEO</span><span class="sd">Contenido en profundidad que posiciona y atiende la intención de búsqueda.</span></div>
-      <div class="svc"><span class="sn">08</span><span class="st">Guiones y Spots</span><span class="sd">Estructuras dinámicas por escenas para reels, anuncios y videos institucionales.</span></div>
+      <div class="svc"><span class="sn">01</span><span class="st">Copywriting publicitario</span><span class="sd">Conceptos, claims y piezas que detienen el scroll y convierten.</span></div>
+      <div class="svc"><span class="sn">02</span><span class="st">Redacción para redes</span><span class="sd">Instagram, LinkedIn, Facebook y TikTok con voz consistente.</span></div>
+      <div class="svc"><span class="sn">03</span><span class="st">Storytelling de marca</span><span class="sd">Relatos que dan sentido al negocio y construyen vínculo.</span></div>
+      <div class="svc"><span class="sn">04</span><span class="st">Email marketing</span><span class="sd">Asuntos, secuencias y campañas orientadas a apertura y venta.</span></div>
+      <div class="svc"><span class="sn">05</span><span class="st">Landing pages</span><span class="sd">Arquitectura de mensaje: headline, beneficios y CTA.</span></div>
+      <div class="svc"><span class="sn">06</span><span class="st">Blogs &amp; artículos SEO</span><span class="sd">Contenido optimizado que rankea y responde a la intención.</span></div>
+      <div class="svc"><span class="sn">07</span><span class="st">UX Writing</span><span class="sd">Microcopy claro que reduce fricción y mejora la experiencia.</span></div>
+      <div class="svc"><span class="sn">08</span><span class="st">Guiones para video</span><span class="sd">Estructura narrativa para reels, spots y piezas corporativas.</span></div>
+      <div class="svc"><span class="sn">09</span><span class="st">Naming &amp; slogans</span><span class="sd">Nombres y frases que sintetizan la promesa de marca.</span></div>
+      <div class="svc"><span class="sn">10</span><span class="st">Estrategia de contenido</span><span class="sd">Parrillas, pilares y medición que ordenan el ruido.</span></div>
     </div>
   </div>
 </section>
 
-<!-- ============ TRABAJO REAL (CASOS FUSIONADOS + PIEZAS REALES) ============ -->
+<!-- ============ TRABAJO REAL (casos + muestras fusionados) ============ -->
 <section id="trabajo">
-  <div class="wrap reveal">
-    <div class="idx" style="color:var(--dmuted);">03</div>
-    <h2 class="big" style="color:var(--paper);">TRABAJO <span class="it">real</span></h2>
-    <p class="muted" style="max-width:640px;margin-top:14px;">Planteamiento estratégico, métricas y las piezas finales tal como fueron publicadas. Una sola secuencia por proyecto.</p>
+  <div class="wrap">
+    <div class="reveal">
+    <div class="idx">03</div>
+    <h2 class="big">TRABAJO <span class="it">real</span></h2>
+    <p class="muted" style="max-width:640px;margin-top:18px;">Un mismo método por marca: entender el problema de negocio, definir la estrategia, escribir la pieza y medir el resultado. Esto es lo que salió publicado.</p>
+    </div>
 
-    <!-- BLOQUE: PÁRRAFO SIETE (NUEVO CARRUSEL EDITORIAL) -->
-    <article class="work-item">
-      <div class="work-header">
-        <div class="work-title-wrap">
-          <span class="work-num">01</span>
-          <h3 class="work-title">Párrafo Siete <span class="work-sub">— Divulgación Lingüística &amp; Redes</span></h3>
-        </div>
-        <div class="chips"><span>Edición de Estilo</span><span>Storytelling Histórico</span><span>Carrusel Redes</span><span>Branding Editorial</span></div>
-      </div>
-      <div class="work-grid">
-        <div class="work-narrative">
-          <p><b>Desafío:</b> Difundir temas de corrección ortográfica y datos históricos del castellano en Chile de manera ágil, dinámica y visualmente cautivadora para redes sociales.</p>
-          <p style="margin-top:10px;"><b>Estrategia de Contenido:</b> Estructura de carrusel didáctico guiada por la curiosidad histórica: <em>«Chile tuvo su propia ortografía de 1884 a 1927»</em>. Ejemplificación progresiva mediante contrastes directos (ej. hombre/ombre, cedro/zedro) y anclaje con vestigios urbanos reales en Santiago.</p>
-        </div>
-        <div>
-          <div class="copy-sample-box">
-            <div class="copy-sample-title">Ejemplo del Hook editorial</div>
-            <p class="copy-sample-text">«En la entrada del edificio de Beauchef 850, inaugurado en 1922, aún dice: "Escuela de Injeniería", con J. Esto fue gracias a las reformas de Andrés Bello.»</p>
-          </div>
-        </div>
+    <!-- TRANSMAT -->
+    <article class="case-full reveal">
+      <div class="case-head"><span class="cn">01</span><h3>Transmat <span class="muted2" style="color:var(--dmuted);font-weight:400;">— B2B Industrial</span></h3></div>
+      <div class="chips"><span>SEO</span><span>Estrategia de contenido</span><span>Mailing</span><span>Social B2B</span></div>
+      <p class="case-txt"><b>Desafío:</b> empresa de transporte de carga sobredimensionada e izaje con baja visibilidad digital y un público técnico difícil de impactar. <b>Estrategia:</b> keywords del sector en Semrush y GA, pilares de contenido y una voz de marca sobria, técnica y confiable.</p>
+
+      <div class="case-metrics">
+        <div><div class="cm-n">+15.700</div><div class="cm-l">Visitas/mes</div></div>
+        <div><div class="cm-n">452k</div><div class="cm-l">Impresiones</div></div>
+        <div><div class="cm-n">6,97%</div><div class="cm-l">CTR — 3× benchmark</div></div>
       </div>
 
-      <!-- Carrusel Párrafo Siete -->
-      <div class="carousel-container">
-        <div class="carousel-top-bar">
-          <div class="carousel-label"><span>⇄</span> Carrusel completo · La ortografía chilena de Andrés Bello</div>
-          <div>
-            <button class="carousel-nav-btn" onclick="scrollCarousel('c-parrafo', -320)">←</button>
-            <button class="carousel-nav-btn" onclick="scrollCarousel('c-parrafo', 320)">→</button>
+      <div class="m-block">
+        <h4>Pieza real · Carrusel LinkedIn — "Mujeres en la minería chilena"</h4>
+        <div class="img-carousel">
+          <img src="images 2/transmat/transmat-1.jpg" alt="Transmat — carrusel LinkedIn, portada Mujeres en la minería chilena" loading="lazy">
+          <img src="images 2/transmat/transmat-2.jpg" alt="Transmat — dato 23% fuerza laboral minera" loading="lazy">
+          <img src="images 2/transmat/transmat-3.jpg" alt="Transmat — comparación internacional" loading="lazy">
+          <img src="images 2/transmat/transmat-4.jpg" alt="Transmat — 48,5% de nuevas contrataciones mujeres" loading="lazy">
+          <img src="images 2/transmat/transmat-5.jpg" alt="Transmat — desafíos de formación" loading="lazy">
+          <img src="images 2/transmat/transmat-6.jpg" alt="Transmat — cierre transformación en curso" loading="lazy">
+          <img src="images 2/transmat/transmat-7.jpg" alt="Transmat — cierre expertos en cada movimiento" loading="lazy">
+        </div>
+      </div>
+
+      <div class="m-two">
+        <div class="m-block" style="margin-top:0;">
+          <h4>Social &amp; paid</h4>
+          <div class="m-card"><span class="m-lbl">LinkedIn</span><p>Chile invierte +US$25.600M en infraestructura hídrica. Mover esa maquinaria exige ingeniería y planificación.</p></div>
+          <div class="m-card"><span class="m-lbl">Google Ads · Search</span><p>Rental de grúas 250 t — Transmat. Flota de última generación · operadores e ingenieros expertos.</p></div>
+          <div class="m-card"><span class="m-lbl">LinkedIn Ads</span><p>El 38% de la electricidad de Chile ya es solar y eólica. Movemos la infraestructura que lo hace posible.</p></div>
+          <div class="m-card" style="margin-top:14px;">
+            <span class="m-lbl">Artículo · estructura optimizada</span>
+            <p class="land-h" style="font-size:17px;">El verdadero boom hídrico en Chile</p>
+            <p style="font-size:12px;color:var(--muted);margin-top:8px;">infraestructura hídrica chile · desaladoras · transporte de carga especializada · izaje minería</p>
           </div>
         </div>
-        <div class="img-carousel" id="c-parrafo">
-          <img src="images/1.jpg" alt="Párrafo Siete — Chile tuvo su propia ortografía" onerror="this.src='images/parrafo-siete/1.jpg'" loading="lazy">
-          <img src="images/2.jpg" alt="Párrafo Siete — Andrés Bello y las reglas ortográficas" onerror="this.src='images/parrafo-siete/2.jpg'" loading="lazy">
-          <img src="images/3.jpg" alt="Párrafo Siete — Se eliminó la letra H" onerror="this.src='images/parrafo-siete/3.jpg'" loading="lazy">
-          <img src="images/4.jpg" alt="Párrafo Siete — Hombre / Ombre" onerror="this.src='images/parrafo-siete/4.jpg'" loading="lazy">
-          <img src="images/5.jpg" alt="Párrafo Siete — La letra C fue sustituida por Z" onerror="this.src='images/parrafo-siete/5.jpg'" loading="lazy">
-          <img src="images/6.jpg" alt="Párrafo Siete — Cedro / Zedro" onerror="this.src='images/parrafo-siete/6.jpg'" loading="lazy">
-          <img src="images/7.jpg" alt="Párrafo Siete — La reforma no trascendió mucho" onerror="this.src='images/parrafo-siete/7.jpg'" loading="lazy">
-          <img src="images/8.jpg" alt="Párrafo Siete — Escuela de Injeniería Beauchef 850" onerror="this.src='images/parrafo-siete/8.jpg'" loading="lazy">
-          <img src="images/9.jpg" alt="Párrafo Siete — Reformas en castellano antiguo" onerror="this.src='images/parrafo-siete/9.jpg'" loading="lazy">
+        <div class="m-block" style="margin-top:0;">
+          <h4>Email &amp; SEO</h4>
+          <div class="m-card"><span class="m-lbl">Asuntos que abren</span><p>Flota de grúas XCMG: la diferencia en tu proyecto</p></div>
+          <div class="newsletter-frame">
+            <img src="images 2/transmat/transmat-newsletter.jpg" alt="Transmat — newsletter real, Creamos soluciones para la industria" loading="lazy">
+          </div>
+          <p class="carousel-label">↕ Desplaza para ver el newsletter completo</p>
         </div>
       </div>
     </article>
 
-    <!-- BLOQUE: AUROSOL -->
-    <article class="work-item">
-      <div class="work-header">
-        <div class="work-title-wrap">
-          <span class="work-num">02</span>
-          <h3 class="work-title">Aurosol <span class="work-sub">— Estrategia, Spots &amp; Campaña</span></h3>
-        </div>
-        <div class="chips"><span>Concepto Creativo</span><span>Guiones de Spot</span><span>Carrusel Redes</span><span>Naming</span></div>
-      </div>
-      <div class="work-grid">
-        <div class="work-narrative">
-          <p><b>Desafío:</b> Introducir la línea de lubricación ocular Aurosol sin usar promesas médicas farmacológicas complejas ni hacer comparativas directas con competidores establecidos.</p>
-          <p style="margin-top:10px;"><b>Estrategia &amp; Concepto:</b> Creación del universo «Pantallas y Vida Saludable» bajo el claim central: <em>«Tus ojos son tu herramienta más valiosa. Cuídalos»</em>. Guiones escena por escena y piezas de carrusel con soluciones estacionales de hidratación.</p>
-        </div>
-        <div>
-          <div class="copy-sample-box">
-            <div class="copy-sample-title">Ejemplo de Copy publicado</div>
-            <p class="copy-sample-text">«Que el aire acondicionado no seque tu mirada. Cuida tus ojos este verano con Aurosol. Hidratación y alivio en una sola gota.»</p>
-          </div>
+    <!-- LAGRIFULL -->
+    <article class="case-full reveal">
+      <div class="case-head"><span class="cn">02</span><h3>Lagrifull <span class="muted2" style="color:var(--dmuted);font-weight:400;">— Lanzamiento Farma</span></h3></div>
+      <div class="chips"><span>Naming de claim</span><span>Landing</span><span>Paid Media</span></div>
+      <p class="case-txt"><b>Desafío:</b> lanzar una lágrima artificial en una categoría saturada. <b>Estrategia:</b> concepto «Cuidado experto para tus ojos» con sub-claims rotables, landing y parrilla por fases.</p>
+
+      <div class="m-block">
+        <h4>Pieza real · Carrusel — Campaña de lanzamiento</h4>
+        <div class="img-carousel">
+          <img src="images 2/lagrifull/lagrifull-1.jpg" alt="Lagrifull — packshot producto, campaña de lanzamiento" loading="lazy">
+          <img src="images 2/lagrifull/lagrifull-2.jpg" alt="Lagrifull — pieza Cuidado experto para tus ojos" loading="lazy">
+          <img src="images 2/lagrifull/lagrifull-3.jpg" alt="Lagrifull — grilla Hidratación / Experto / Alivio" loading="lazy">
         </div>
       </div>
 
-      <!-- Carrusel Aurosol -->
-      <div class="carousel-container">
-        <div class="carousel-top-bar">
-          <div class="carousel-label"><span>⇄</span> Carrusel real de campaña · Este verano cuida tu mirada</div>
-          <div>
-            <button class="carousel-nav-btn" onclick="scrollCarousel('c-aurosol', -320)">←</button>
-            <button class="carousel-nav-btn" onclick="scrollCarousel('c-aurosol', 320)">→</button>
+      <div class="m-two">
+        <div class="m-block" style="margin-top:0;">
+          <h4>Landing page real</h4>
+          <div class="img-carousel">
+            <img src="images 2/landing/lagrifull-landing.jpg" alt="Lagrifull — home real del sitio, cuidado experto para tus ojos" loading="lazy">
           </div>
         </div>
-        <div class="img-carousel" id="c-aurosol">
-          <img src="images/aurosol/aurosol-1.jpg" alt="Aurosol — Portada Este verano cuida tu mirada" loading="lazy">
-          <img src="images/aurosol/aurosol-2.jpg" alt="Aurosol — Agua de mar" loading="lazy">
-          <img src="images/aurosol/aurosol-3.jpg" alt="Aurosol — Piscinas" loading="lazy">
-          <img src="images/aurosol/aurosol-4.jpg" alt="Aurosol — Viento y arena" loading="lazy">
-          <img src="images/aurosol/aurosol-5.jpg" alt="Aurosol — Sol intenso y ambientes secos" loading="lazy">
-          <img src="images/aurosol/aurosol-6.jpg" alt="Aurosol — Llévalo contigo" loading="lazy">
-          <img src="images/aurosol/aurosol-7.jpg" alt="Aurosol — Cierre formuladas para" loading="lazy">
+        <div class="m-block" style="margin-top:0;">
+          <h4>Social &amp; storytelling</h4>
+          <div class="m-card"><span class="m-lbl">Facebook</span><p>Ojo seco al final del día no es normal: es una señal. La solución cabe en tu bolsillo y en tu rutina diaria.</p></div>
+          <div class="m-card"><span class="m-lbl">Lanzamiento de producto</span><p>Lagrifull® es un lubricante ocular desarrollado en Italia. Su fórmula con hialuronato de sodio 0,4% hidrata, lubrica y cuida la superficie ocular para una protección más duradera.</p></div>
         </div>
       </div>
+
+      <div class="case-metrics">
+        <div><div class="cm-n">649k</div><div class="cm-l">Alcance/mes</div></div>
+        <div><div class="cm-n">4.659</div><div class="cm-l">Clics</div></div>
+        <div><div class="cm-n">5.555</div><div class="cm-l">Views de video</div></div>
+      </div>
+      <p class="case-note">Resultados estimados de planificación de medios (Meta · Google · YouTube).</p>
     </article>
 
-    <!-- BLOQUE: TRANSMAT -->
-    <article class="work-item">
-      <div class="work-header">
-        <div class="work-title-wrap">
-          <span class="work-num">03</span>
-          <h3 class="work-title">Transmat <span class="work-sub">— B2B Industrial, SEO &amp; Contenidos</span></h3>
-        </div>
-        <div class="chips"><span>Estrategia SEO</span><span>Social B2B</span><span>Email Marketing</span></div>
-      </div>
-      <div class="work-grid">
-        <div class="work-narrative">
-          <p><b>Desafío:</b> Empresa de transporte de carga de alto tonelaje e izaje industrial con baja visibilidad orgánica y una audiencia técnica de gerentes de faena y operaciones.</p>
-          <p style="margin-top:10px;"><b>Estrategia &amp; Ejecución:</b> Auditoría y selección de palabras clave estratégicas en Semrush y Google Analytics, calendarización editorial ligada al sector minero e infraestructura, newsletters comerciales y carruseles corporativos en LinkedIn.</p>
-          <div class="work-metrics">
-            <div><div class="wm-n acc">+15.700</div><div class="wm-l">Visitas / mes</div></div>
-            <div><div class="wm-n">452k</div><div class="wm-l">Impresiones</div></div>
-            <div><div class="wm-n acc">6,97%</div><div class="wm-l">CTR (3× sector)</div></div>
-          </div>
-        </div>
-        <div>
-          <div class="copy-sample-box">
-            <div class="copy-sample-title">Ejemplo Redes B2B</div>
-            <p class="copy-sample-text">«Chile invierte +US$25.600M en infraestructura hídrica. Mover esa maquinaria exige ingeniería y planificación milimétrica.»</p>
-          </div>
+    <!-- AUROSOL -->
+    <article class="case-full reveal">
+      <div class="case-head"><span class="cn">03</span><h3>Aurosol <span class="muted2" style="color:var(--dmuted);font-weight:400;">— Estrategia &amp; Spots</span></h3></div>
+      <div class="chips"><span>Concepto</span><span>Guiones de spot</span><span>Copy influencer</span><span>Naming</span></div>
+      <p class="case-txt"><b>Desafío:</b> lanzar Aurosol y Aurosol Forte sin afirmaciones médicas ni nombrar competidores. <b>Estrategia:</b> sistema de mensajes con dos ejes —Pantallas y Vida Saludable— y guiones de spot por escenas.</p>
+
+      <div class="m-block">
+        <h4>Pieza real · Carrusel — "Este verano, cuida tu mirada"</h4>
+        <div class="img-carousel">
+          <img src="images 2/aurosol/aurosol-1.jpg" alt="Aurosol — portada Este verano cuida tu mirada" loading="lazy">
+          <img src="images 2/aurosol/aurosol-2.jpg" alt="Aurosol — agua de mar" loading="lazy">
+          <img src="images 2/aurosol/aurosol-3.jpg" alt="Aurosol — piscinas" loading="lazy">
+          <img src="images 2/aurosol/aurosol-4.jpg" alt="Aurosol — viento y arena" loading="lazy">
+          <img src="images 2/aurosol/aurosol-5.jpg" alt="Aurosol — sol intenso y ambientes secos" loading="lazy">
+          <img src="images 2/aurosol/aurosol-6.jpg" alt="Aurosol — llévalo contigo a todos lados" loading="lazy">
+          <img src="images 2/aurosol/aurosol-7.jpg" alt="Aurosol — cierre formuladas para" loading="lazy">
         </div>
       </div>
 
-      <!-- Carrusel Transmat -->
-      <div class="carousel-container">
-        <div class="carousel-top-bar">
-          <div class="carousel-label"><span>⇄</span> Carrusel real en LinkedIn · Mujeres en la minería chilena</div>
-          <div>
-            <button class="carousel-nav-btn" onclick="scrollCarousel('c-transmat', -320)">←</button>
-            <button class="carousel-nav-btn" onclick="scrollCarousel('c-transmat', 320)">→</button>
-          </div>
-        </div>
-        <div class="img-carousel" id="c-transmat">
-          <img src="images/transmat/transmat-1.jpg" alt="Transmat — Portada Mujeres en la minería chilena" loading="lazy">
-          <img src="images/transmat/transmat-2.jpg" alt="Transmat — Dato 23% fuerza laboral minera" loading="lazy">
-          <img src="images/transmat/transmat-3.jpg" alt="Transmat — Comparación internacional" loading="lazy">
-          <img src="images/transmat/transmat-4.jpg" alt="Transmat — Nuevas contrataciones mujeres" loading="lazy">
-          <img src="images/transmat/transmat-5.jpg" alt="Transmat — Desafíos de formación" loading="lazy">
-          <img src="images/transmat/transmat-6.jpg" alt="Transmat — Transformación en curso" loading="lazy">
-          <img src="images/transmat/transmat-7.jpg" alt="Transmat — Cierre institucional" loading="lazy">
-        </div>
+      <div class="m-grid" style="margin-top:36px;">
+        <div class="m-card"><span class="m-lbl">Instagram</span><p>Que el aire acondicionado no seque tu mirada. Cuida tu mirada este verano con Aurosol. Hidratación y alivio en una sola gota.</p><span class="m-cta">→ Descúbrelo en bio</span></div>
+        <div class="m-card"><span class="m-lbl">TikTok</span><p>POV: trabajas 9 horas en pantalla y tus ojos te lo cobran. Hicimos esto para ti #SaludVisual</p><span class="m-cta">→ Guarda este video</span></div>
+        <div class="m-card"><span class="m-lbl">Meta Ads</span><p>¿Pantallas todo el día? Tus ojos piden una pausa. Hidratación experta en 1 gota. Aurosol, cuida tu mirada.</p></div>
       </div>
+
+      <blockquote class="case-quote">«Tus ojos son tu herramienta más valiosa. <span class="acc">Cuídalos.</span>»</blockquote>
     </article>
 
-    <!-- BLOQUE: LAGRIFULL -->
-    <article class="work-item">
-      <div class="work-header">
-        <div class="work-title-wrap">
-          <span class="work-num">04</span>
-          <h3 class="work-title">Lagrifull <span class="work-sub">— Lanzamiento Farmacéutico &amp; Landing</span></h3>
-        </div>
-        <div class="chips"><span>Claim de Campaña</span><span>Landing Page</span><span>Paid Ads</span></div>
-      </div>
-      <div class="work-grid">
-        <div class="work-narrative">
-          <p><b>Desafío:</b> Lanzar una lágrima artificial en un mercado copado de soluciones oftalmológicas tradicionales.</p>
-          <p style="margin-top:10px;"><b>Estrategia:</b> Creación del claim «Cuidado experto para tus ojos», estructuración de los textos para landing page orientada a venta en farmacias y guías para pauta pagada por etapas.</p>
-          <div class="work-metrics">
-            <div><div class="wm-n acc">649k</div><div class="wm-l">Alcance proyectado</div></div>
-            <div><div class="wm-n">4.659</div><div class="wm-l">Clics al enlace</div></div>
-            <div><div class="wm-n">5.555</div><div class="wm-l">Reproducciones de video</div></div>
-          </div>
-        </div>
-        <div>
-          <div class="copy-sample-box">
-            <div class="copy-sample-title">Storytelling de Producto</div>
-            <p class="copy-sample-text">«Lagrifull® es un lubricante ocular desarrollado en Italia. Su fórmula con hialuronato de sodio 0,4% hidrata, lubrica y cuida la superficie ocular para una protección duradera.»</p>
-          </div>
-        </div>
-      </div>
+    <!-- PÁRRAFO SIETE -->
+    <article class="case-full reveal">
+      <div class="case-head"><span class="cn">04</span><h3>Párrafo Siete <span class="muted2" style="color:var(--dmuted);font-weight:400;">— Correctores de Estilo</span></h3></div>
+      <div class="chips"><span>Content editorial</span><span>Storytelling histórico</span><span>Carrusel LinkedIn</span><span>Corrección de estilo</span></div>
+      <p class="case-txt"><b>Desafío:</b> una marca de corrección de estilo necesita demostrar autoridad lingüística sin sonar a aviso de servicio. <b>Estrategia:</b> convertir un episodio real y poco conocido de la historia del idioma —la propia ortografía chilena de 1884 a 1927, basada en las reformas de Andrés Bello— en un carrusel de datos curiosos, con ejemplos concretos (hombre/ombre, cedro/zedro) que educan y construyen credibilidad de marca al mismo tiempo.</p>
 
-      <!-- Carrusel Lagrifull -->
-      <div class="carousel-container">
-        <div class="carousel-top-bar">
-          <div class="carousel-label"><span>⇄</span> Piezas de campaña y landing page oficial</div>
-          <div>
-            <button class="carousel-nav-btn" onclick="scrollCarousel('c-lagrifull', -320)">←</button>
-            <button class="carousel-nav-btn" onclick="scrollCarousel('c-lagrifull', 320)">→</button>
-          </div>
-        </div>
-        <div class="img-carousel" id="c-lagrifull">
-          <img src="images/lagrifull/lagrifull-1.jpg" alt="Lagrifull — Packshot producto" loading="lazy">
-          <img src="images/lagrifull/lagrifull-2.jpg" alt="Lagrifull — Cuidado experto para tus ojos" loading="lazy">
-          <img src="images/lagrifull/lagrifull-3.jpg" alt="Lagrifull — Grilla hidratación y alivio" loading="lazy">
-          <img src="images/landing/lagrifull-landing.jpg" alt="Lagrifull — Landing page oficial" loading="lazy">
+      <div class="m-block">
+        <h4>Pieza real · Carrusel LinkedIn — "La ortografía chilena que casi cambió el idioma"</h4>
+        <div class="img-carousel">
+          <img src="images 2/parrafosiete/9.jpg" alt="Párrafo Siete — Chile tuvo su propia ortografía de 1884 a 1927" loading="lazy">
+          <img src="images 2/parrafosiete/7.jpg" alt="Párrafo Siete — reglas ortográficas basadas en Andrés Bello" loading="lazy">
+          <img src="images 2/parrafosiete/2.jpg" alt="Párrafo Siete — reformas de Andrés Bello y la gramática en Chile" loading="lazy">
+          <img src="images 2/parrafosiete/1.jpg" alt="Párrafo Siete — entrada del edificio de Beauchef 850, Escuela de Injeniería" loading="lazy">
+          <img src="images 2/parrafosiete/8.jpg" alt="Párrafo Siete — se eliminó la letra H" loading="lazy">
+          <img src="images 2/parrafosiete/3.jpg" alt="Párrafo Siete — ejemplo hombre a ombre" loading="lazy">
+          <img src="images 2/parrafosiete/4.jpg" alt="Párrafo Siete — la letra C fue sustituida por la Z" loading="lazy">
+          <img src="images 2/parrafosiete/6.jpg" alt="Párrafo Siete — ejemplo cedro a zedro" loading="lazy">
+          <img src="images 2/parrafosiete/5.jpg" alt="Párrafo Siete — la reforma no trascendió mucho" loading="lazy">
         </div>
       </div>
+      <p class="case-note">Formato de curiosidad histórica pensado para posicionar a la marca como referente en lengua y ortografía, no solo como servicio de corrección.</p>
     </article>
 
-    <!-- BLOQUE DE SITIOS WEB & PROYECTOS DIGITALES -->
-    <div class="web-block">
-      <div class="idx" style="color:var(--dmuted);margin-bottom:6px;">PROYECTOS DIGITALES &amp; UX</div>
-      <h3 style="font-size:26px;font-weight:700;letter-spacing:-0.02em;">Sitios Web &amp; Experiencia Digital</h3>
-      <p class="muted" style="font-size:13.5px;max-width:600px;margin-top:8px;">Diseño de información, mensajes comerciales y arquitectura de contenido en plataformas reales y prototipos.</p>
-      
-      <div class="web-grid">
-        <a href="https://massagebyapex.com/" target="_blank" rel="noopener noreferrer" class="web-card">
-          <div>
-            <span class="web-card-tag">Sitio Web · Wellness</span>
-            <div class="web-card-name">Massage by Apex</div>
-            <p class="web-card-desc">Estructuración del mensaje de servicios de bienestar y salud, jerarquía de navegación y flujo de agendamiento.</p>
-          </div>
-          <div class="web-card-link">Visitar sitio web <span>↗</span></div>
+    <!-- MÁS PROYECTOS -->
+    <div class="more-projects reveal">
+      <h4>Más proyectos</h4>
+      <div class="mp-grid">
+        <a class="mp-card" href="https://www.mudanzasgustainsson.cl/" target="_blank" rel="noopener">
+          <span class="mp-name">Mudanzas Gustainsson</span>
+          <p class="mp-desc">Revisión de copy y SEO del one-page para una empresa de mudanzas en Viña del Mar y Valparaíso.</p>
+          <span class="mp-link">Ver sitio real ↗</span>
         </a>
-
-        <a href="https://combustrol.com/" target="_blank" rel="noopener noreferrer" class="web-card">
-          <div>
-            <span class="web-card-tag">Sitio Web · Ingeniería</span>
-            <div class="web-card-name">Combustrol</div>
-            <p class="web-card-desc">Redacción y articulación corporativa para equipamiento industrial, eficiencia térmica y soluciones energéticas.</p>
-          </div>
-          <div class="web-card-link">Visitar sitio web <span>↗</span></div>
+        <a class="mp-card" href="https://combustrol.com/" target="_blank" rel="noopener">
+          <span class="mp-name">Combustrol</span>
+          <p class="mp-desc">Contenido institucional B2B para una comercializadora mexicana de combustibles alternos industriales.</p>
+          <span class="mp-link">Ver sitio real ↗</span>
         </a>
-
-        <a href="https://www.lwosolutions.com/" target="_blank" rel="noopener noreferrer" class="web-card">
-          <div>
-            <span class="web-card-tag">Sitio Web · Consultoría B2B</span>
-            <div class="web-card-name">LWO Solutions</div>
-            <p class="web-card-desc">Arquitectura de contenidos y redacción directa orientada a conversión para soluciones corporativas internacionales.</p>
-          </div>
-          <div class="web-card-link">Visitar sitio web <span>↗</span></div>
+        <a class="mp-card" href="https://massagebyapex.com/" target="_blank" rel="noopener">
+          <span class="mp-name">Apex Recovery Massage</span>
+          <p class="mp-desc">Copy en inglés para un centro de masaje deportivo y clínico en Salt Lake City, Utah (EE. UU.).</p>
+          <span class="mp-link">Ver sitio real ↗</span>
         </a>
-
-        <a href="https://xd.adobe.com/view/87ff5ff0-394b-4dda-ae13-da8b8e19d1be-d2ac/screen/bfe2c7af-dda4-4a8e-97e4-e2a16db7df78/" target="_blank" rel="noopener noreferrer" class="web-card">
-          <div>
-            <span class="web-card-tag">Prototipo UX · Adobe XD</span>
-            <div class="web-card-name">Prototipo de Interfaz</div>
-            <p class="web-card-desc">Wireframes, microcopy, validación de rutas y flujos de pantalla interactivos para usuario final.</p>
-          </div>
-          <div class="web-card-link">Ver prototipo interactivo <span>↗</span></div>
+        <a class="mp-card" href="https://www.lwosolutions.com/" target="_blank" rel="noopener">
+          <span class="mp-name">Lakewoods Office Solutions</span>
+          <p class="mp-desc">Copy en inglés para una empresa familiar de instalación y diseño de oficinas comerciales en Utah (EE. UU.).</p>
+          <span class="mp-link">Ver sitio real ↗</span>
+        </a>
+        <a class="mp-card" href="https://xd.adobe.com/view/87ff5ff0-394b-4dda-ae13-da8b8e19d1be-d2ac/screen/bfe2c7af-dda4-4a8e-97e4-e2a16db7df78/" target="_blank" rel="noopener">
+          <span class="mp-name">Prototipo UX/UI</span>
+          <p class="mp-desc">Microcopy y arquitectura de mensaje para un prototipo de interfaz (UX Writing).</p>
+          <span class="mp-link">Ver prototipo ↗</span>
         </a>
       </div>
     </div>
-
   </div>
 </section>
 
@@ -512,20 +447,20 @@ footer{background:#080808;color:var(--dmuted);text-align:center;padding:26px;fon
   <div class="wrap reveal">
     <div class="idx">04</div>
     <h2 class="big">PROCESO DE <span class="it">trabajo</span></h2>
-    <p class="muted" style="max-width:560px;margin-top:14px;">Un método iterativo que traduce la necesidad comercial en contenido riguroso con métricas claras.</p>
+    <p class="muted" style="max-width:560px;margin-top:16px;">Un sistema repetible que convierte un brief difuso en contenido con dirección y métrica.</p>
     <div class="steps">
-      <div class="step"><div class="sp-n">01</div><div class="sp-t">Investigación</div><p>Análisis del producto, la competencia y los datos del sector antes de proponer cualquier texto.</p></div>
-      <div class="step"><div class="sp-n">02</div><div class="sp-t">Audiencia &amp; Insight</div><p>Entendimiento de lo que el cliente busca, duda o necesita resolver en su proceso de decisión.</p></div>
-      <div class="step"><div class="sp-n">03</div><div class="sp-t">Estrategia</div><p>Construcción del claim eje, pilares de contenido, matriz de canales y tono lingüístico.</p></div>
-      <div class="step"><div class="sp-n">04</div><div class="sp-t">Redacción</div><p>Producción de titulares, carruseles, guiones y páginas donde cada término está justificado.</p></div>
-      <div class="step"><div class="sp-n">05</div><div class="sp-t">Optimización</div><p>Edición de estilo, comprobación de legibilidad UX y enfoque sobre los llamados a la acción.</p></div>
-      <div class="step"><div class="sp-n">06</div><div class="sp-t">Medición &amp; Ajuste</div><p>Monitoreo del rendimiento real (aperturas, clics, permanencia) para afinar el contenido continuo.</p></div>
+      <div class="step"><div class="sp-n">01</div><div class="sp-t">Investigación</div><p>Negocio, competencia, categoría y datos. Antes de escribir, entender.</p></div>
+      <div class="step"><div class="sp-n">02</div><div class="sp-t">Análisis de audiencia</div><p>Quién es, qué busca, qué la frena. El insight nace aquí.</p></div>
+      <div class="step"><div class="sp-n">03</div><div class="sp-t">Estrategia</div><p>Pilares, mensaje clave, tono y formatos por canal.</p></div>
+      <div class="step"><div class="sp-n">04</div><div class="sp-t">Redacción</div><p>Concepto y piezas. Cada palabra al servicio de un objetivo.</p></div>
+      <div class="step"><div class="sp-n">05</div><div class="sp-t">Optimización</div><p>SEO, UX y pruebas A/B sobre titulares, asuntos y CTA.</p></div>
+      <div class="step"><div class="sp-n">06</div><div class="sp-t">Medición</div><p>Métricas, reporte y ajuste. El ciclo se reinicia con datos.</p></div>
     </div>
   </div>
 </section>
 
 <!-- ============ CONTACTO ============ -->
-<section id="contacto">
+<section id="contacto" style="background:var(--ink);color:var(--paper);">
   <div class="wrap reveal">
     <div class="idx" style="color:var(--dmuted);">05</div>
     <div class="c-grid">
@@ -533,10 +468,10 @@ footer{background:#080808;color:var(--dmuted);text-align:center;padding:26px;fon
       <div class="c-list">
         <a href="mailto:raquemtz@gmail.com" class="c-row"><span>Email</span><b>raquemtz@gmail.com</b></a>
         <a href="https://wa.me/56935542831" class="c-row"><span>WhatsApp</span><b>+56 9 3554 2831</b></a>
-        <a href="https://www.linkedin.com/in/raquel-martinez-arellano-profesional/" target="_blank" rel="noopener noreferrer" class="c-row"><span>LinkedIn</span><b>/in/raquel-martinez-arellano</b></a>
-        <a href="https://www.behance.net/raquelmarellano" target="_blank" rel="noopener noreferrer" class="c-row"><span>Behance</span><b>behance.net/raquelmarellano</b></a>
+        <a href="https://www.linkedin.com/in/raquel-martinez-arellano-profesional/" class="c-row"><span>LinkedIn</span><b>/in/raquel-martinez-arellano</b></a>
+        <a href="https://www.behance.net/raquelmarellano" class="c-row"><span>Behance</span><b>behance.net/raquelmarellano</b></a>
         <div class="c-row"><span>Ubicación</span><b>Viña del Mar · Chile</b></div>
-        <p class="c-foot">Disponible para consultorías de contenido, estrategia de marca y proyectos editoriales.</p>
+        <p class="c-foot">Disponible para agencias, startups y marcas que buscan contenido con estrategia detrás.</p>
       </div>
     </div>
   </div>
@@ -545,19 +480,11 @@ footer{background:#080808;color:var(--dmuted);text-align:center;padding:26px;fon
 <footer>Gabriela Raquel Martínez · Content Strategist &amp; Marketing Digital · MMXXVI</footer>
 
 <script>
-/* Animación al hacer scroll */
+/* Animación de aparición al hacer scroll */
 const io = new IntersectionObserver((entries)=>{
   entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
-},{threshold:0.12});
+},{threshold:0, rootMargin:'0px 0px -10% 0px'});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-
-/* Control táctil/botones para carruseles */
-function scrollCarousel(id, amount) {
-  const container = document.getElementById(id);
-  if(container) {
-    container.scrollBy({ left: amount, behavior: 'smooth' });
-  }
-}
 </script>
 
 </body>
