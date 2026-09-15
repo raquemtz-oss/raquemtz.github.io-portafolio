@@ -9,15 +9,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Lora:ital@1&display=swap" rel="stylesheet">
 <style>
-/* ============================================================
-   SISTEMA DE DISEÑO — Bold tipográfico · naranja brasa
-   Edita aquí los colores si quieres
-   ============================================================ */
 :root{
-  --ink:#0C0C0C;        /* casi negro */
-  --paper:#F2EFE9;      /* hueso (fondo) */
+  --ink:#0C0C0C;
+  --paper:#F2EFE9;
   --paper2:#E7E2D8;
-  --acc:#FF4D23;        /* naranja brasa (acento) */
+  --acc:#FF4D23;
   --soft:#3A382F;
   --muted:#8A8478;
   --dmuted:#6C675C;
@@ -42,13 +38,12 @@ h2.big{font-weight:700;font-size:clamp(42px,7vw,86px);line-height:0.92;letter-sp
 .rule{width:54px;height:4px;background:var(--acc);border:0;margin:22px 0;}
 a{color:inherit;}
 
-/* ---------- NAV ---------- */
 nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(12,12,12,.92);
   backdrop-filter:blur(8px);border-bottom:1px solid var(--dline);}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:16px;padding-bottom:16px;}
 nav .logo{color:var(--paper);font-weight:700;font-size:15px;letter-spacing:-0.01em;}
 nav .logo .it{font-size:16px;}
-nav .links{display:flex;gap:26px;}
+nav .links{display:flex;align-items:center;gap:26px;}
 nav .links a{color:var(--muted);text-decoration:none;font-size:12px;font-weight:600;
   letter-spacing:.08em;text-transform:uppercase;transition:color .2s;}
 nav .links a:hover{color:var(--acc);}
@@ -56,7 +51,6 @@ nav .links a:hover{color:var(--acc);}
 .nav-cta:hover{background:var(--acc);}
 @media(max-width:860px){ nav .links{display:none;} }
 
-/* ---------- HERO ---------- */
 #hero{background:var(--ink);color:var(--paper);min-height:100vh;display:flex;align-items:center;
   position:relative;overflow:hidden;padding-top:90px;}
 #hero .mark{position:absolute;right:-40px;top:60px;font-family:var(--serif);font-style:italic;
@@ -70,7 +64,6 @@ nav .links a:hover{color:var(--acc);}
   font-weight:700;font-size:14px;letter-spacing:.04em;padding:15px 30px;border-radius:32px;transition:transform .2s;}
 .btn:hover{transform:translateY(-2px);}
 
-/* ---------- SOBRE MÍ ---------- */
 #sobre .grid{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:start;margin-top:30px;}
 #sobre h2.big .it{display:block;}
 .metrics{display:grid;grid-template-columns:1fr 1fr;gap:30px 26px;}
@@ -83,7 +76,6 @@ nav .links a:hover{color:var(--acc);}
   font-weight:600;color:var(--dmuted);}
 @media(max-width:860px){ #sobre .grid{grid-template-columns:1fr;gap:40px;} }
 
-/* ---------- SERVICIOS ---------- */
 #servicios .list{column-count:2;column-gap:60px;margin-top:30px;}
 .svc{display:flex;gap:16px;align-items:baseline;border-top:1px solid var(--line);padding:18px 0;break-inside:avoid;}
 .svc .sn{color:var(--acc);font-weight:700;font-size:13px;min-width:26px;}
@@ -94,11 +86,9 @@ nav .links a:hover{color:var(--acc);}
   .svc{flex-wrap:wrap;} .svc .st{width:auto;flex:1;} .svc .sd{flex-basis:100%;margin-left:42px;}
 }
 
-/* reveal animation */
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease;}
 .reveal.in{opacity:1;transform:none;}
 
-/* ---------- CARRUSEL DE IMÁGENES REALES ---------- */
 .img-carousel{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;
   margin-top:24px;padding-bottom:12px;-webkit-overflow-scrolling:touch;}
 .img-carousel img{scroll-snap-align:start;height:360px;width:auto;flex:0 0 auto;
@@ -115,7 +105,6 @@ nav .links a:hover{color:var(--acc);}
 .newsletter-frame::-webkit-scrollbar-track{background:transparent;}
 .newsletter-frame::-webkit-scrollbar-thumb{background:var(--acc);border-radius:3px;}
 
-/* ---------- TRABAJO REAL (casos + muestras fusionados) ---------- */
 .case-full{border-top:1px solid var(--line);padding:52px 0 56px;}
 .case-full:first-of-type{border-top:0;padding-top:8px;}
 .case-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;}
@@ -144,7 +133,6 @@ nav .links a:hover{color:var(--acc);}
 @media(max-width:860px){ .m-grid{grid-template-columns:1fr 1fr;} .m-two{grid-template-columns:1fr;gap:0;} }
 @media(max-width:520px){ .m-grid{grid-template-columns:1fr;} }
 
-/* ---------- MÁS PROYECTOS (links reales) ---------- */
 .more-projects{margin-top:70px;padding-top:46px;border-top:1px solid var(--line);}
 .more-projects h4{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--dmuted);margin-bottom:22px;}
 .mp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
@@ -156,7 +144,6 @@ nav .links a:hover{color:var(--acc);}
 @media(max-width:860px){ .mp-grid{grid-template-columns:1fr 1fr;} }
 @media(max-width:520px){ .mp-grid{grid-template-columns:1fr;} }
 
-/* ---------- PROCESO ---------- */
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:34px 40px;margin-top:46px;}
 .step{border-top:3px solid var(--ink);padding-top:16px;}
 .step .sp-n{font-weight:700;font-size:36px;color:var(--acc);letter-spacing:-0.02em;}
@@ -165,7 +152,6 @@ nav .links a:hover{color:var(--acc);}
 @media(max-width:860px){ .steps{grid-template-columns:1fr 1fr;} }
 @media(max-width:520px){ .steps{grid-template-columns:1fr;} }
 
-/* ---------- CONTACTO ---------- */
 .c-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-top:20px;}
 #contacto h2.big{font-size:clamp(48px,8vw,86px);}
 .c-list .c-row{display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid var(--dline);padding:16px 0;text-decoration:none;transition:padding-left .2s;}
@@ -175,13 +161,11 @@ nav .links a:hover{color:var(--acc);}
 .c-foot{border-top:1px solid var(--dline);padding-top:18px;margin-top:6px;font-size:13px;color:var(--muted);}
 @media(max-width:860px){ .c-grid{grid-template-columns:1fr;gap:36px;} }
 
-/* ---------- FOOTER ---------- */
 footer{background:var(--ink);color:var(--dmuted);text-align:center;padding:30px;font-size:10px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;border-top:1px solid var(--dline);}
 </style>
 </head>
 <body>
 
-<!-- ============ NAV ============ -->
 <nav>
   <div class="wrap">
     <span class="logo">Gabriela Raquel <span class="it acc">Martínez</span></span>
@@ -195,7 +179,6 @@ footer{background:var(--ink);color:var(--dmuted);text-align:center;padding:30px;
   </div>
 </nav>
 
-<!-- ============ HERO ============ -->
 <section id="hero">
   <div class="mark">¶</div>
   <div class="wrap">
@@ -205,7 +188,6 @@ footer{background:var(--ink);color:var(--dmuted);text-align:center;padding:30px;
   </div>
 </section>
 
-<!-- ============ SOBRE MÍ ============ -->
 <section id="sobre">
   <div class="wrap reveal">
     <div class="idx">01</div>
@@ -242,7 +224,6 @@ footer{background:var(--ink);color:var(--dmuted);text-align:center;padding:30px;
   </div>
 </section>
 
-<!-- ============ SERVICIOS ============ -->
 <section id="servicios" style="background:var(--paper2);">
   <div class="wrap reveal">
     <div class="idx">02</div>
@@ -263,7 +244,6 @@ footer{background:var(--ink);color:var(--dmuted);text-align:center;padding:30px;
   </div>
 </section>
 
-<!-- ============ TRABAJO REAL (casos + muestras fusionados) ============ -->
 <section id="trabajo">
   <div class="wrap">
     <div class="reveal">
@@ -272,7 +252,6 @@ footer{background:var(--ink);color:var(--dmuted);text-align:center;padding:30px;
     <p class="muted" style="max-width:640px;margin-top:18px;">Un mismo método por marca: entender el problema de negocio, definir la estrategia, escribir la pieza y medir el resultado. Esto es lo que salió publicado.</p>
     </div>
 
-    <!-- TRANSMAT -->
     <article class="case-full reveal">
       <div class="case-head"><span class="cn">01</span><h3>Transmat <span class="muted2" style="color:var(--dmuted);font-weight:400;">— B2B Industrial</span></h3></div>
       <div class="chips"><span>SEO</span><span>Estrategia de contenido</span><span>Mailing</span><span>Social B2B</span></div>
@@ -320,7 +299,6 @@ footer{background:var(--ink);color:var(--dmuted);text-align:center;padding:30px;
       </div>
     </article>
 
-    <!-- LAGRIFULL -->
     <article class="case-full reveal">
       <div class="case-head"><span class="cn">02</span><h3>Lagrifull <span class="muted2" style="color:var(--dmuted);font-weight:400;">— Lanzamiento Farma</span></h3></div>
       <div class="chips"><span>Naming de claim</span><span>Landing</span><span>Paid Media</span></div>
@@ -357,7 +335,6 @@ footer{background:var(--ink);color:var(--dmuted);text-align:center;padding:30px;
       <p class="case-note">Resultados estimados de planificación de medios (Meta · Google · YouTube).</p>
     </article>
 
-    <!-- AUROSOL -->
     <article class="case-full reveal">
       <div class="case-head"><span class="cn">03</span><h3>Aurosol <span class="muted2" style="color:var(--dmuted);font-weight:400;">— Estrategia &amp; Spots</span></h3></div>
       <div class="chips"><span>Concepto</span><span>Guiones de spot</span><span>Copy influencer</span><span>Naming</span></div>
@@ -385,7 +362,6 @@ footer{background:var(--ink);color:var(--dmuted);text-align:center;padding:30px;
       <blockquote class="case-quote">«Tus ojos son tu herramienta más valiosa. <span class="acc">Cuídalos.</span>»</blockquote>
     </article>
 
-    <!-- PÁRRAFO SIETE -->
     <article class="case-full reveal">
       <div class="case-head"><span class="cn">04</span><h3>Párrafo Siete <span class="muted2" style="color:var(--dmuted);font-weight:400;">— Correctores de Estilo</span></h3></div>
       <div class="chips"><span>Content editorial</span><span>Storytelling histórico</span><span>Carrusel LinkedIn</span><span>Corrección de estilo</span></div>
@@ -394,21 +370,20 @@ footer{background:var(--ink);color:var(--dmuted);text-align:center;padding:30px;
       <div class="m-block">
         <h4>Pieza real · Carrusel LinkedIn — "La ortografía chilena que casi cambió el idioma"</h4>
         <div class="img-carousel">
-          <img src="images 2/parrafosiete/9.jpg" alt="Párrafo Siete — Chile tuvo su propia ortografía de 1884 a 1927" loading="lazy">
-          <img src="images 2/parrafosiete/7.jpg" alt="Párrafo Siete — reglas ortográficas basadas en Andrés Bello" loading="lazy">
-          <img src="images 2/parrafosiete/2.jpg" alt="Párrafo Siete — reformas de Andrés Bello y la gramática en Chile" loading="lazy">
           <img src="images 2/parrafosiete/1.jpg" alt="Párrafo Siete — entrada del edificio de Beauchef 850, Escuela de Injeniería" loading="lazy">
-          <img src="images 2/parrafosiete/8.jpg" alt="Párrafo Siete — se eliminó la letra H" loading="lazy">
+          <img src="images 2/parrafosiete/2.jpg" alt="Párrafo Siete — reformas de Andrés Bello y la gramática en Chile" loading="lazy">
           <img src="images 2/parrafosiete/3.jpg" alt="Párrafo Siete — ejemplo hombre a ombre" loading="lazy">
           <img src="images 2/parrafosiete/4.jpg" alt="Párrafo Siete — la letra C fue sustituida por la Z" loading="lazy">
-          <img src="images 2/parrafosiete/6.jpg" alt="Párrafo Siete — ejemplo cedro a zedro" loading="lazy">
           <img src="images 2/parrafosiete/5.jpg" alt="Párrafo Siete — la reforma no trascendió mucho" loading="lazy">
+          <img src="images 2/parrafosiete/6.jpg" alt="Párrafo Siete — ejemplo cedro a zedro" loading="lazy">
+          <img src="images 2/parrafosiete/7.jpg" alt="Párrafo Siete — reglas ortográficas basadas en Andrés Bello" loading="lazy">
+          <img src="images 2/parrafosiete/8.jpg" alt="Párrafo Siete — se eliminó la letra H" loading="lazy">
+          <img src="images 2/parrafosiete/9.jpg" alt="Párrafo Siete — Chile tuvo su propia ortografía de 1884 a 1927" loading="lazy">
         </div>
       </div>
       <p class="case-note">Formato de curiosidad histórica pensado para posicionar a la marca como referente en lengua y ortografía, no solo como servicio de corrección.</p>
     </article>
 
-    <!-- MÁS PROYECTOS -->
     <div class="more-projects reveal">
       <h4>Más proyectos</h4>
       <div class="mp-grid">
@@ -442,7 +417,6 @@ footer{background:var(--ink);color:var(--dmuted);text-align:center;padding:30px;
   </div>
 </section>
 
-<!-- ============ PROCESO ============ -->
 <section id="proceso" style="background:var(--paper2);">
   <div class="wrap reveal">
     <div class="idx">04</div>
@@ -459,7 +433,6 @@ footer{background:var(--ink);color:var(--dmuted);text-align:center;padding:30px;
   </div>
 </section>
 
-<!-- ============ CONTACTO ============ -->
 <section id="contacto" style="background:var(--ink);color:var(--paper);">
   <div class="wrap reveal">
     <div class="idx" style="color:var(--dmuted);">05</div>
@@ -480,7 +453,6 @@ footer{background:var(--ink);color:var(--dmuted);text-align:center;padding:30px;
 <footer>Gabriela Raquel Martínez · Content Strategist &amp; Marketing Digital · MMXXVI</footer>
 
 <script>
-/* Animación de aparición al hacer scroll */
 const io = new IntersectionObserver((entries)=>{
   entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
 },{threshold:0, rootMargin:'0px 0px -10% 0px'});
