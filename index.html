@@ -146,6 +146,16 @@ nav .links a:hover{color:var(--acc);}
 .mp-card .mp-link{display:block;margin-top:16px;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--acc);}
 @media(max-width:860px){ .mp-grid{grid-template-columns:1fr 1fr;} }
 @media(max-width:520px){ .mp-grid{grid-template-columns:1fr;} }
+.mp-logo{height:34px;width:auto;max-width:100%;object-fit:contain;margin-bottom:16px;display:block;}
+
+.logo-strip{margin-top:70px;padding-top:46px;border-top:1px solid var(--line);}
+.logo-strip h4{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--dmuted);margin-bottom:28px;}
+.logo-strip .ls-grid{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:36px;}
+.logo-strip .ls-grid img{height:38px;width:auto;max-width:150px;object-fit:contain;opacity:.88;transition:opacity .2s;}
+.logo-strip .ls-grid img:hover{opacity:1;}
+.logo-strip .ls-tile{background:var(--ink);padding:12px 18px;border-radius:4px;display:flex;align-items:center;justify-content:center;}
+.logo-strip .ls-tile img{height:26px;}
+@media(max-width:640px){ .logo-strip .ls-grid{justify-content:center;gap:28px;} }
 
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:34px 40px;margin-top:46px;}
 .step{border-top:3px solid var(--ink);padding-top:16px;}
@@ -398,16 +408,19 @@ footer{background:var(--ink);color:var(--dmuted);text-align:center;padding:30px;
           <span class="mp-link">Ver sitio real ↗</span>
         </a>
         <a class="mp-card" href="https://combustrol.com/" target="_blank" rel="noopener">
+          <img class="mp-logo" src="images 2/logos/combustrol-logo.png" alt="Logo Combustrol" loading="lazy">
           <span class="mp-name">Combustrol</span>
           <p class="mp-desc">Contenido institucional B2B para una comercializadora mexicana de combustibles alternos industriales.</p>
           <span class="mp-link">Ver sitio real ↗</span>
         </a>
         <a class="mp-card" href="https://massagebyapex.com/" target="_blank" rel="noopener">
+          <img class="mp-logo" src="images 2/logos/apex-logo.png" alt="Logo Apex Recovery Massage" loading="lazy">
           <span class="mp-name">Apex Recovery Massage</span>
           <p class="mp-desc">Copy en inglés para un centro de masaje deportivo y clínico en Salt Lake City, Utah (EE. UU.).</p>
           <span class="mp-link">Ver sitio real ↗</span>
         </a>
         <a class="mp-card" href="https://www.lwosolutions.com/" target="_blank" rel="noopener">
+          <img class="mp-logo" src="images 2/logos/lakewoods-logo.png" alt="Logo Lakewoods Office Solutions" loading="lazy">
           <span class="mp-name">Lakewoods Office Solutions</span>
           <p class="mp-desc">Copy en inglés para una empresa familiar de instalación y diseño de oficinas comerciales en Utah (EE. UU.).</p>
           <span class="mp-link">Ver sitio real ↗</span>
@@ -417,6 +430,17 @@ footer{background:var(--ink);color:var(--dmuted);text-align:center;padding:30px;
           <p class="mp-desc">Microcopy y arquitectura de mensaje para un prototipo de interfaz (UX Writing).</p>
           <span class="mp-link">Ver prototipo ↗</span>
         </a>
+      </div>
+    </div>
+
+    <div class="logo-strip reveal">
+      <h4>Marcas con las que he trabajado</h4>
+      <div class="ls-grid">
+        <img src="images 2/logos/apex-logo.png" alt="Logo Apex Recovery Massage" loading="lazy">
+        <img src="images 2/logos/combustrol-logo.png" alt="Logo Combustrol" loading="lazy">
+        <div class="ls-tile"><img src="images 2/logos/hojasdelaurel-logo.png" alt="Logo Hojas de Laurel Flamenco" loading="lazy"></div>
+        <img src="images 2/logos/lakewoods-logo.png" alt="Logo Lakewoods Office Solutions" loading="lazy">
+        <img src="images 2/logos/perseo-logo.png" alt="Logo Perseo Creative Studio" loading="lazy">
       </div>
     </div>
   </div>
